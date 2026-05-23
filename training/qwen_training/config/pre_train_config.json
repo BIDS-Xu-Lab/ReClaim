@@ -1,0 +1,16 @@
+{
+    "num_train_epochs": 1,
+    "light_weightsave_steps": 2000,
+    "ckpt_save_steps": 2000,
+    "eval_steps": 500,
+    "max_seq_len": 4096,
+    "train_micro_batch_size_per_gpu": 16,
+    "gradient_accumulation_steps": 1,
+    "gradient_clipping": 1.0,
+    "lr": 5e-4,
+    "betas": [0.9, 0.98],
+    "eps": 1e-6,
+    "weight_decay": 0.1,
+    "warmup_steps": 2000,
+    "torch_compile": true
+}
