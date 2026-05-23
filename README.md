@@ -12,18 +12,23 @@ across age brackets and sex.
 
 ```
 .
-├── prepare_eval_data_new.py            # Stage 1 - build per-patient eval sequences
-├── prepare_disease_case_controls_fast.py
-│                                       # Stage 2 - assemble case/control IDs per disease
-├── test_case_controls.py               # Stage 3 - run inference and compute AUC
-├── scripts/
-│   └── eval_ehr.sh                     # End-to-end driver (env-var configured)
-├── utils/
-│   ├── data_ops.py                     # Sequence parsing and case/control matching
-│   └── evaluate_auc.py                 # DeLong AUC and variance
-└── data/
-    └── icd_code_map_with_category.csv  # ICD codes evaluated (optional filter)
+└── evaluation/                             # Evaluation pipeline (this README)
+    ├── prepare_eval_data_new.py            # Stage 1 - build per-patient eval sequences
+    ├── prepare_disease_case_controls_fast.py
+    │                                       # Stage 2 - assemble case/control IDs per disease
+    ├── test_case_controls.py               # Stage 3 - run inference and compute AUC
+    ├── scripts/
+    │   └── eval_ehr.sh                     # End-to-end driver (env-var configured)
+    ├── utils/
+    │   ├── data_ops.py                     # Sequence parsing and case/control matching
+    │   └── evaluate_auc.py                 # DeLong AUC and variance
+    └── data/
+        └── icd_code_map_with_category.csv  # ICD codes evaluated (optional filter)
 ```
+
+A sibling folder for data processing and model training will be added in a
+future commit. The instructions below cover the `evaluation/` pipeline only;
+all commands assume the working directory is `evaluation/`.
 
 ## Input data contract
 
@@ -119,6 +124,7 @@ export SOURCE_DATA_DIR=/path/to/raw/trajectories
 export EVAL_DATA_DIR=/path/to/eval/workdir
 export MODEL_PATH=/path/to/hf/checkpoint
 
+cd evaluation
 bash scripts/eval_ehr.sh
 ```
 
