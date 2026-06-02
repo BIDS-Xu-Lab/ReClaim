@@ -1,0 +1,326 @@
+#!/usr/bin/env python3
+"""
+Reclaim Data Filter
+Creates demographic sequences and vocabulary from first patient visits
+"""
+
+
+import logging
+from pyspark.sql import SparkSession, Window, DataFrame
+from pyspark.sql.types import StructType, StructField, StringType, DateType
+from datetime import date
+import pyspark.sql.functions as F
+import os
+import sys
+from glob import glob
+import argparse
+
+# Fix PySpark Python version mismatch - ensure workers use the same Python as driver
+os.environ['PYSPARK_PYTHON'] = sys.executable
+os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
+
+
+from utils import setup_logging, time_execution, spark_log_contingency_table
+
+# Logging indentation prefixes
+INDENT1 = "  "
+INDENT2 = "    "
+INDENT3 = "      "
+INDENT4 = "        "
+INDENT5 = "          "
+
+def parse_args():
+    """Parse command line arguments"""
+    parser = argparse.ArgumentParser(description='Create demographic sequences from MarketScan data')
+    parser.add_argument("--omop_dir", type=str, 
+                       default=os.path.join(os.environ.get("EHRSHOT_DATA_ROOT", "/path/to/ehrshot_data_root"), "ehrshot_omop"),
+                       help='Base directory containing EHRSHOT Raw data')
+    parser.add_argument("--mapping_dir", type=str, 
+                       default='../../vocab_mapping/mapping',
+                       help='Directory containing the mapping files')
+    parser.add_argument("--external_val_data_dir", type=str, 
+                       default=os.path.join(os.environ.get("PROCESSED_EHRSHOT_DATA_ROOT", "/path/to/processed_ehrshot_data_root"), "v6", "ehrshot"),
+                       help='Directory containing external validation data')            
+    parser.add_argument("--min_duration_days", type=int, default=30, help='Minimum claims duration required for a patient to be included')
+    parser.add_argument("--min_age", type=int, default=10, help='Minimum age at first event required for a patient to be included')
+    parser.add_argument("--max_age", type=int, default=110, help='Maximum age at first event required for a patient to be included')
+    return parser.parse_args()
+
+
+
+def create_spark_session(app_name: str) -> SparkSession:
+    """
+    Create SparkSession configured for SBATCH resources:
+    - 60 CPUs per task
+    - 400GB memory per node
+    - Single node setup, local mode
+    """
+    
+    # # Resource allocation: 60 cores, 400GB memory per node
+    # # Driver: Reserve ~40GB for driver (10% of total)
+    # # Executor: Use remaining cores and memory
+    # driver_memory = "4g"
+    # executor_memory = "4g"  # Leave some overhead for system
+    # max_result_size = "2g"
+    # executor_cores = "4"
+    # # Shuffle partitions: typically 2-3x number of cores for better parallelism
+    # shuffle_partitions = "100"
+    
+    # spark = SparkSession.builder \
+    #     .appName(app_name) \
+    #     .master("local[*]") \
+    #     .config("spark.driver.memory", driver_memory) \
+    #     .config("spark.driver.maxResultSize", max_result_size) \
+    #     .config("spark.executor.memory", executor_memory) \
+    #     .config("spark.executor.cores", executor_cores) \
+    #     .config("spark.sql.shuffle.partitions", shuffle_partitions) \
+    #     .config("spark.sql.adaptive.enabled", "true") \
+    #     .config("spark.sql.adaptive.coalescePartitions.enabled", "true") \
+    #     .config("spark.serializer", "org.apache.spark.serializer.KryoSerializer") \
+    #     .getOrCreate()
+
+
+    spark = (SparkSession.builder
+        .appName('External_Validation_Data_Builder')
+        .config("spark.driver.bindAddress", "127.0.0.1")
+        .config("spark.driver.host", "127.0.0.1")
+        .config("spark.driver.memory", "4g")  # Increase driver memory
+        .config("spark.executor.memory", "4g")  # Increase executor memory
+        .config("spark.sql.shuffle.partitions", "100")  # Better parallelism
+        .getOrCreate())
+    return spark
+
+def merge_overlapping_periods_monthly(payer_plan_period_df: DataFrame):
+    """
+    Merge overlapping or adjacent date ranges for each person_id + PAYER combination.
+    Keeps original dates but uses 1 month gap as threshold for separation.
+    PLANTYP and CAP become features of the enrollment (take first by earliest start date).
+    
+    Result: For each person_id, PAYER-specific enrollments that are 
+    sequential, chronological, and non-overlapping.
+    """
+    
+    # Step 0: Drop enrollments shorter than 30 days (also handles end < start)
+    payer_plan_period_df = payer_plan_period_df.filter(
+        F.datediff(F.col("payer_plan_period_end_DATE"), F.col("payer_plan_period_start_DATE")) >= 30
+    )
+    
+    # Step 1: Define window partitioned by person_id + PAYER only, ordered by start date
+    window_spec = Window.partitionBy("person_id", "PAYER") \
+                        .orderBy("payer_plan_period_start_DATE")
+    
+    # Step 2: Calculate the cumulative maximum end date up to the previous row
+    payer_plan_period_df_with_max = payer_plan_period_df.withColumn(
+        "prev_max_end",
+        F.max("payer_plan_period_end_DATE").over(
+            window_spec.rowsBetween(Window.unboundedPreceding, -1)
+        )
+    )
+    
+    # Step 3: Flag when a new enrollment starts (gap > 1 month detected)
+    payer_plan_period_df_with_flag = payer_plan_period_df_with_max.withColumn(
+        "months_gap",
+        F.months_between(
+            F.col("payer_plan_period_start_DATE"), 
+            F.col("prev_max_end")
+        )
+    ).withColumn(
+        "is_new_enrollment",
+        F.when(
+            F.col("prev_max_end").isNull() |  # First row
+            (F.col("months_gap") > 1),         # Gap > 1 month
+            1
+        ).otherwise(0)
+    )
+    
+    # Step 4: Create group ID by cumulative sum of the flags
+    payer_plan_period_df_with_group = payer_plan_period_df_with_flag.withColumn(
+        "enrollment_group_id",
+        F.sum("is_new_enrollment").over(window_spec)
+    )
+    
+    # Step 5: Aggregate to get merged enrollment periods
+    # Take first PLANTYP and CAP (by earliest start date) using first() on ordered window
+    payer_plan_period_collapsed = payer_plan_period_df_with_group.groupBy(
+        "person_id", "PAYER", "enrollment_group_id"
+    ).agg(
+        F.first("PLANTYP").alias("PLANTYP"),  # first by start date (due to prior ordering)
+        F.first("CAP").alias("CAP"),
+        F.min("payer_plan_period_start_DATE").alias("enrollment_start_date"),
+        F.max("payer_plan_period_end_DATE").alias("enrollment_end_date"),
+        F.count("*").alias("plans_merged")
+    ).drop("enrollment_group_id")
+    
+    # Step 6: Calculate duration in days
+    payer_plan_period_collapsed = payer_plan_period_collapsed.withColumn(
+        "enrollment_duration_days",
+        F.datediff(F.col("enrollment_end_date"), F.col("enrollment_start_date"))
+    )
+    
+    # Step 7: Coalesce NULL/None values to "MISSING" for PAYER, PLANTYP, CAP
+    # Cast CAP to string first since it may be inferred as BIGINT
+    payer_plan_period_collapsed = payer_plan_period_collapsed \
+        .withColumn("PAYER", F.coalesce(F.col("PAYER").cast("string"), F.lit("MISSING"))) \
+        .withColumn("PLANTYP", F.coalesce(F.col("PLANTYP").cast("string"), F.lit("MISSING"))) \
+        .withColumn("CAP", F.coalesce(F.col("CAP").cast("string"), F.lit("MISSING")))
+    
+    return payer_plan_period_collapsed
+
+
+
+@time_execution
+def ehrshot_filter(spark: SparkSession, omop_dir: str, mapping_dir: str, min_duration_days: int, min_age: int, max_age: int, external_val_data_dir: str):
+    """
+    Filter EHRSHOT data in the following steps:
+    1. Filter enrollees based on the minimum duration (max visit date - min visit date)
+    2. Filter enrollees based on minimum age at first event
+
+    """
+    logging.info("EHRSHOT Filtering:")
+    
+    # Load enrollment data from both datasets (include DOBYR for age calculation)
+    ehrshot_person = spark.read.parquet(os.path.join(omop_dir, "person")).select("person_id", "gender_concept_id", "year_of_birth", "month_of_birth", "day_of_birth")    
+    total_personids = ehrshot_person.select("person_id").distinct().count()
+    logging.info("%sTotal unique person IDs: %s", INDENT1, f"{total_personids:,}")
+
+    # Load payer plan period data
+    ehrshot_payer_plan_period = spark.read.parquet(os.path.join(omop_dir, "payer_plan_period")) \
+        .filter((F.col("payer_plan_period_start_DATE") >= F.lit("2008-01-01").cast("date")) & (F.col("payer_plan_period_end_DATE") >= F.lit("2008-01-01").cast("date"))) \
+        .filter((F.col("payer_plan_period_start_DATE") <= F.lit("2025-03-31").cast("date")) & (F.col("payer_plan_period_end_DATE") <= F.lit("2025-03-31").cast("date")))
+
+    plantype_marketscan_mapping = spark.read.csv(os.path.join(mapping_dir, "payer_concept_annotated.csv"), header=True, inferSchema=True) \
+        .withColumn("PLANTYP", F.coalesce(F.col("PLANTYP"), F.lit("MISSING"))) \
+        .select("payer_concept_id", "PAYER", "PLANTYP", "CAP")
+    
+    plantype_marketscan_mapping.show(10, truncate=False)
+
+    ehrshot_payer_plan_period_mapped = (
+        ehrshot_payer_plan_period
+        .join(plantype_marketscan_mapping, on="payer_concept_id", how="left")
+        .select("person_id", "PAYER", "PLANTYP", "CAP", "payer_concept_id", "payer_plan_period_start_DATE", "payer_plan_period_end_DATE")
+    )
+
+    ehrshot_payer_plan_period_mapped.show(10, truncate=False)
+    
+    # Log distribution of PAYER, PLANTYP, CAP, payer_concept_id
+    logging.info("%sLogging distribution of PAYER", INDENT1)
+    spark_log_contingency_table(ehrshot_payer_plan_period_mapped, "PAYER")
+    
+    logging.info("%sLogging distribution of PLANTYP", INDENT1)
+    spark_log_contingency_table(ehrshot_payer_plan_period_mapped, "PLANTYP")
+    
+    logging.info("%sLogging distribution of CAP", INDENT1)
+    spark_log_contingency_table(ehrshot_payer_plan_period_mapped, "CAP")
+    
+    logging.info("%sLogging distribution of payer_concept_id", INDENT1)
+    spark_log_contingency_table(ehrshot_payer_plan_period_mapped, "payer_concept_id")
+
+    # collapse overlapping/duplicated enrollment periods for each person_id + PAYER + PLANTYP combination
+    ehrshot_payer_plan_period_collapsed = merge_overlapping_periods_monthly(ehrshot_payer_plan_period_mapped)
+    ehrshot_payer_plan_period_collapsed.write.mode("overwrite").parquet(os.path.join(external_val_data_dir, "ehrshot_payer_plan_period_collapsed"))
+
+    # total visit start and end dates
+    visit_start_end = spark.read.parquet(os.path.join(omop_dir, "visit_occurrence")) \
+        .filter((F.col("visit_start_DATE") >= F.lit("2008-01-01").cast("date")) & (F.col("visit_end_DATE") >= F.lit("2008-01-01").cast("date"))) \
+        .filter((F.col("visit_start_DATE") <= F.lit("2025-03-31").cast("date")) & (F.col("visit_end_DATE") <= F.lit("2025-03-31").cast("date"))) \
+        .groupBy("person_id").agg(F.min("visit_start_DATE").alias("MIN_VISIT_DATE"), F.max("visit_end_DATE").alias("MAX_VISIT_DATE")) 
+    
+    # insufficient visit duration
+    insufficient_visit_duration_personids = visit_start_end \
+        .filter(F.datediff(F.col("MAX_VISIT_DATE"), F.col("MIN_VISIT_DATE")) < min_duration_days) \
+        .select("person_id").distinct()
+    logging.info("%sPerson IDs with insufficient EHR visit duration: %s", INDENT1, f"{insufficient_visit_duration_personids.count():,}")
+    
+    # age at first event
+    age_at_first_event = ehrshot_person \
+        .join(ehrshot_payer_plan_period_collapsed, on="person_id", how="left") \
+        .join(visit_start_end, on="person_id", how="left") \
+        .withColumn("first_event_date", 
+            F.when(F.col("MIN_VISIT_DATE").isNull(), F.col("enrollment_start_date"))
+             .when(F.col("enrollment_start_date").isNull(), F.col("MIN_VISIT_DATE"))
+             .otherwise(F.least(F.col("MIN_VISIT_DATE"), F.col("enrollment_start_date")))) \
+        .withColumn("first_event_year", F.year(F.col("first_event_date"))) \
+        .withColumn("age", F.col("first_event_year") - F.col("year_of_birth"))
+
+    spark_log_contingency_table(age_at_first_event, "age")
+
+    underage_personids = age_at_first_event.filter(F.col("age") < min_age).select("person_id").distinct()
+    logging.info("%sPerson IDs with age < %d: %s", INDENT1, min_age, f"{underage_personids.count():,}")
+    overage_personids = age_at_first_event.filter(F.col("age") > max_age).select("person_id").distinct()
+    logging.info("%sPerson IDs with age > %d: %s", INDENT1, max_age, f"{overage_personids.count():,}")
+
+
+    # union all the excluded enrollees
+    excluded_personids = insufficient_visit_duration_personids.union(underage_personids).union(overage_personids).distinct()
+    logging.info("%sTotal Person IDs to be excluded: %s, %.2f%%", INDENT1, f"{excluded_personids.count():,}", excluded_personids.count() / total_personids * 100)
+
+    # save the excluded enrollees to parquet file
+    excluded_personids.write.mode("overwrite").parquet(os.path.join(external_val_data_dir, "excluded_personids"))
+
+
+def test_merge_overlapping_periods_monthly(spark: SparkSession):
+    """Test the merge_overlapping_periods_monthly function with sample data."""
+    logging.info("Testing the merge_overlapping_periods_monthly function...")
+    schema = StructType([
+        StructField("person_id", StringType(), True),
+        StructField("PAYER", StringType(), True),
+        StructField("PLANTYP", StringType(), True),
+        StructField("CAP", StringType(), True),
+        StructField("payer_plan_period_start_DATE", DateType(), True),
+        StructField("payer_plan_period_end_DATE", DateType(), True),
+    ])
+
+    test_data = [
+        ("P1", "PayerA", "HMO", "C1", date(2010, 1, 15), date(2012, 6, 30)),   # Plan A
+        ("P1", "PayerA", "PPO", "C2", date(2011, 3, 1), date(2013, 9, 15)),    # Plan B
+        ("P1", "PayerA", "HMO", "C1", date(2013, 5, 1), date(2014, 2, 28)),    # Plan C
+        ("P1", "PayerA", "EPO", "C3", date(2014, 3, 20), date(2015, 1, 31)),   # Plan D
+        ("P1", "PayerA", "PPO", "C2", date(2016, 5, 1), date(2017, 8, 15)),    # Plan E
+        ("P1", "PayerA", "HMO", "C1", date(2017, 6, 1), date(2018, 12, 31)),   # Plan F
+    ]
+
+    df = spark.createDataFrame(test_data, schema)
+
+    result = merge_overlapping_periods_monthly(df)
+    result.orderBy("person_id", "PAYER", "enrollment_start_date").show(truncate=False)
+
+
+def main():
+    """Main execution function"""
+    # Set up logging
+    log_file = setup_logging(level=logging.INFO)
+    logging.info("S0 DATA FILTERING STARTING...")
+    # Parse arguments
+    args = parse_args()
+
+    # Create output paths
+    os.makedirs(args.external_val_data_dir, exist_ok=True)
+    
+    # Log configuration
+    logging.info("\nConfiguration:")
+    logging.info("%sOMOP directory: %s", INDENT1, args.omop_dir)
+    logging.info("%sExternal validation data directory: %s", INDENT1, args.external_val_data_dir)
+    logging.info("%sMinimum visit duration days: %s", INDENT1, args.min_duration_days)
+    logging.info("%sMinimum age: %s", INDENT1, args.min_age)
+    logging.info("%sMaximum age: %s", INDENT1, args.max_age)
+    
+    
+    # Create Spark session
+    spark = create_spark_session('EHRSHOT_Step0_Data_Filtering')
+
+    # Test the merge function
+    test_merge_overlapping_periods_monthly(spark)
+    
+    # Filter data
+    ehrshot_filter(spark, args.omop_dir, args.mapping_dir, args.min_duration_days, args.min_age, args.max_age, args.external_val_data_dir)
+    
+
+
+    # Stop Spark
+    spark.stop()
+    logging.info("Log file: %s", log_file)
+    logging.info("EHRSHOT DATA FILTERING COMPLETED SUCCESSFULLY...")
+
+
+if __name__ == "__main__":
+    main()
