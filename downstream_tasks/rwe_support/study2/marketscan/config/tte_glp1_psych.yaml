@@ -1,0 +1,117 @@
+# =============================================================================
+# GLP-1RA vs SGLT2i / DPP4i -> psychiatric outcomes: target trial emulation
+#
+# Reference: Tang, Lu et al., Diabetes Res Clin Pract 2026;231:113038 (EHR-based).
+# Replicated on MarketScan claims (held-out val+test population, unseen in ReClaim
+# pretraining) with the reference's own cohort construction (Supplement Fig. S1).
+# The code reads cohort_id, era.*, age_floor and windows.*; the other sections
+# document the design (code sets: lookup_table/, codesets_tte.py; estimators:
+# tm3_estimate/estimate_ladder.R).
+# Claims adaptations: no laboratory or vital-sign covariates; death is not
+# observed, so follow-up is censored at disenrollment; drug coverage required
+# (the exposure is unobservable without it).
+# =============================================================================
+
+cohort_id: tte_glp1_psych
+label: "GLP-1RA vs SGLT2i / DPP4i -> psychiatric outcomes (target trial emulation)"
+design: new_user_active_comparator
+
+# ---- Era / population -------------------------------------------------------
+era:
+  index_start: "2019-01-01"     # reference: initiation 2019-01-01 .. 2024-09-30
+  index_end:   "2024-09-30"
+  study_end:   "2024-09-30"     # administrative censoring = last reliable claim date
+age_floor: 18                   # adults >=18 at entry
+
+# ---- Exposure: three antidiabetic drug classes ------------------------------
+# Membership at the RxNorm ingredient level: an NDC belongs to a class if ANY
+# ingredient is in the list (combination products count toward their study-class
+# component, as in the reference's name matching); NDCs mapping to >=2 study
+# classes never assign an arm but count for washout.
+exposure:
+  glp1ra:  [albiglutide, dulaglutide, exenatide, liraglutide, lixisenatide, semaglutide, tirzepatide]
+  sglt2i:  [canagliflozin, dapagliflozin, empagliflozin, ertugliflozin, sotagliflozin, bexagliflozin]
+  dpp4i:   [sitagliptin, saxagliptin, alogliptin, linagliptin]
+  same_day_multi_class: drop    # ambiguous treatment assignment -> excluded (reference rule)
+
+# ---- Study clocks -----------------------------------------------------------
+windows:
+  washout_days: 365             # per emulation, over the two compared classes only
+  baseline_days: 365            # covariate assessment window
+  index_day_include_dx: true    # diagnoses ON the entry day count as baseline
+  index_day_include_drug: false # dispensings ON the entry day are the exposure itself
+
+# ---- Eligibility (reference Fig. S1) ----------------------------------------
+# Two separate emulations (vs SGLT2i, vs DPP4i), each with its own GLP-1RA arm.
+# Entry = first study-class dispensing inside the index window.
+eligibility:
+  t2d_required: ever                # >=1 E11.* on or before entry, all available history
+  medical_claim_prior_365d: true    # >=1 medical claim in the year before entry (Table S1)
+  drug_coverage_gate: true          # RX==1 on every enrollment plan record
+  enrollment_gate: none             # no continuous-enrollment requirement
+
+exclusions:                         # evaluated over all available history (<= entry)
+  t1d: true                         # E10.*
+  esrd: true                        # ESRD/dialysis codes (lookup_table Covariate rows)
+  prior_primary_outcome: true       # any of the 6 psychiatric outcomes (new-onset)
+  prior_antidepressant_or_antipsychotic: true   # any dispensing before entry
+
+# ---- Outcomes (6 primary psychiatric; ICD-10 prefix sets from lookup_table) --
+# Follow-up: entry+1d .. min(first outcome, disenrollment, study_end); Cox per outcome.
+outcomes:
+  source_csv: lookup_table/outcome_cov_icd.csv
+  primary:
+    - Depression
+    - Anxiety_disorders
+    - Bipolar_disorder
+    - Schizophrenia_and_other_psychotic_disorders
+    - Other_mood_disorders
+    - Suicide_ideation
+
+# ---- Negative control outcomes ----------------------------------------------
+ncos:
+  source_csv: lookup_table/glp_nco_icd_0225.csv     # 90 curated NCOs (master list)
+  panel: lookup_table/glp_nco_reference24.txt       # the reference's reported 24 (Table S4)
+  min_prevalence: 0.001                             # reference rule: follow-up risk <0.1% excluded
+
+# ---- Baseline covariates ----------------------------------------------------
+covariates:
+  cluster_master_csv: lookup_table/cluster_master.csv   # 441 condition clusters (66k ICD-10)
+  med_classes_csv: lookup_table/huilin_med.csv          # 26 medication classes
+  utilization: [n_ip_admits, n_op_days, n_rx_disp, n_dx_days]
+  demographics: [age_at_index, sex, cal_year]
+
+# ---- hdPS engine params -----------------------------------------------------
+hdps:
+  n_per_dimension: 200
+  min_num_patients: 50
+  k_prioritised: 500
+  dx_granularity: icd10_3char
+  domains: [inpatient_dx, inpatient_proc, outpatient_dx, outpatient_proc, drug]
+
+# ---- Comparisons (the reference's two) --------------------------------------
+comparisons:
+  - id: glp1_vs_sglt2
+    treatment: glp1ra
+    comparator: sglt2i
+  - id: glp1_vs_dpp4
+    treatment: glp1ra
+    comparator: dpp4i
+
+# ---- Analysis (tm3) ---------------------------------------------------------
+analysis:
+  specs: [crude, demo, paper, hdps, reclaim-s-only, reclaim-m-only, reclaim-l-only]
+  ps_model: logistic                    # reference specs; embedding specs use ridge (5-fold CV)
+  primary_estimator: siptw_cox          # stabilized IPTW (p1/p99 truncated) + weighted Cox (robust SE)
+  estimators: [siptw_cox, psm_cox, strat_cox]
+  psm_caliper: 0.2                      # 1:1 nearest-neighbour, caliper 0.2 SD (seed 1)
+  caliper_sweep: [0.05, 0.1, 0.2, 0.5, 1]
+  obesity_subgroup: true                # baseline obesity cluster, PS refit (primary estimator)
+  nco_calibration: true                 # EmpiricalCalibration fitNull -> EASE -> calibrated CI / p
+  balance: smd
+  ph_check: schoenfeld
+
+# ---- Payer strata ------------------------------------------------------------
+strata:
+  - id: POOL          # CCAE + MDCR + MDCD unioned
+    payer: POOL

@@ -1,0 +1,17 @@
+# run logs (created at run time by the drivers and stages) carry cluster paths and
+# patient identifiers; never released
+logs/
+# cohorts, trajectories, timelines and cached logits are built from patient records
+*.parquet
+*.pkl
+*.h5
+*.hdf5
+# crosswalks and reference tables are generated or supplied locally, never released
+*.csv.gz
+# evaluation results produced by a run
+auc_results*.csv
+onset_summary.json
+predefined_cohort.json
+# caches
+__pycache__/
+*.pyc

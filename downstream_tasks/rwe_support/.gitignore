@@ -1,0 +1,16 @@
+# cluster-specific configuration: create from env.sh.example, never commit
+env.sh
+*/env.sh
+*/*/env.sh
+# data, results, caches and logs are produced by a run and never released
+results/
+intermediate/
+logs/
+**/slurm_job_logs/*
+!**/slurm_job_logs/.gitkeep
+*.parquet
+__pycache__/
+*.pyc
+# PennCIL code sets and site OMOP catalogs are supplied locally, never released
+lookup_table/
+*_catalog.json

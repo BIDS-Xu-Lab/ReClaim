@@ -1,0 +1,16 @@
+# cluster-specific configuration: create from env.sh.example, never commit
+env.sh
+# run logs (created at run time by the drivers and stages) carry cluster paths and
+# data-version labels; never released
+logs/
+slurm_job_logs/
+# licensed or large vocabulary inputs and the mappings generated from them (see vocab_mapping/README.md)
+vocab_mapping/standard_vocab/
+vocab_mapping/mapping/
+vocab_mapping/demo.ipynb
+# data and caches
+*.parquet
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store

@@ -1,0 +1,33 @@
+\begin{table}[H]
+\centering
+\caption{\textcolor{blue}{Accuracy and cost of the pre-trained simulation estimator by number of Monte-Carlo simulations}. Pre-trained ReClaim-S, -M and -L read out by Monte-Carlo simulation of $N$ future-year trajectories per enrollee in the held-out cohort (retrospective n = 356,722; prospective n = 64,658): R$^2$ of the censored total, HNHC ROC-AUC and PR-AUC (score = fraction of the $N$ simulations with next-year total $\geq$ \$30,000), and GPU-seconds per enrollee. $N = 1$ is greedy decoding of a single trajectory, not a Monte-Carlo estimate.}
+\label{tab:mc_simulation_count}   % requires \usepackage{booktabs}
+\scriptsize
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{@{}rrrrrrrrrrrrr@{}}
+\hline
+ & \multicolumn{3}{c}{\textbf{R$^2$}} & \multicolumn{3}{c}{\textbf{ROC-AUC}} & \multicolumn{3}{c}{\textbf{PR-AUC}} & \multicolumn{3}{c}{\textbf{GPU-s / enrollee}} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}\cmidrule(lr){11-13}
+\textbf{$N$} & S & M & L & S & M & L & S & M & L & S & M & L \\
+\hline
+\multicolumn{13}{@{}l}{\textit{Retrospective evaluation}} \\
+1$^{\dagger}$ & 0.236 & 0.237 & 0.239 & 0.609 & 0.613 & 0.613 & 0.204 & 0.212 & 0.213 & -- & -- & -- \\
+2 & 0.188 & 0.189 & 0.183 & 0.696 & 0.699 & 0.700 & 0.240 & 0.248 & 0.248 & 0.012 & 0.019 & 0.032 \\
+4 & 0.272 & 0.296 & 0.289 & 0.747 & 0.749 & 0.750 & 0.329 & 0.337 & 0.341 & 0.022 & 0.033 & 0.058 \\
+8 & 0.330 & 0.339 & 0.340 & 0.788 & 0.791 & 0.792 & 0.397 & 0.404 & 0.409 & 0.042 & 0.065 & 0.111 \\
+16 & 0.359 & 0.361 & 0.364 & 0.826 & 0.828 & 0.828 & 0.449 & 0.454 & 0.457 & 0.084 & 0.124 & 0.211 \\
+32 & 0.370 & 0.377 & 0.377 & 0.855 & 0.856 & 0.857 & 0.486 & 0.492 & 0.493 & 0.164 & 0.244 & 0.411 \\
+64 & 0.375 & 0.383 & 0.382 & 0.874 & 0.875 & 0.877 & 0.507 & 0.512 & 0.515 & 0.326 & 0.478 & 0.829 \\
+\hline
+\multicolumn{13}{@{}l}{\textit{Prospective evaluation}} \\
+1$^{\dagger}$ & 0.317 & 0.314 & 0.313 & 0.648 & 0.649 & 0.649 & 0.300 & 0.303 & 0.300 & -- & -- & -- \\
+2 & 0.211 & 0.247 & 0.223 & 0.724 & 0.729 & 0.730 & 0.329 & 0.337 & 0.338 & -- & -- & -- \\
+4 & 0.338 & 0.349 & 0.352 & 0.768 & 0.771 & 0.765 & 0.422 & 0.429 & 0.426 & -- & -- & -- \\
+8 & 0.392 & 0.407 & 0.404 & 0.805 & 0.810 & 0.810 & 0.490 & 0.499 & 0.501 & -- & -- & -- \\
+16 & 0.421 & 0.426 & 0.440 & 0.831 & 0.840 & 0.838 & 0.541 & 0.550 & 0.548 & -- & -- & -- \\
+32 & 0.434 & 0.445 & 0.447 & 0.855 & 0.858 & 0.859 & 0.576 & 0.582 & 0.584 & -- & -- & -- \\
+64 & 0.439 & 0.453 & 0.452 & 0.863 & 0.875 & 0.874 & 0.596 & 0.607 & 0.606 & -- & -- & -- \\
+\hline
+\multicolumn{13}{@{}l}{\scriptsize $^{\dagger}$greedy decoding (temperature 0), shown for reference.} \\
+\end{tabular}
+\end{table}

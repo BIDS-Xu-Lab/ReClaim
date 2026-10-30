@@ -1,0 +1,123 @@
+# =============================================================================
+# TTE replication -- GLP-1RA vs SGLT2i / DPP4i -> psychiatric outcomes, on OMOP (YNHH)
+#
+# Reference study: Tang, Lu et al., Diabetes Res Clin Pract 2026;231:113038
+# ("Association of GLP-1 receptor agonist use with psychiatric outcomes in
+#  adults with type 2 diabetes: a target trial emulation"). The cohort follows the
+# reference's own construction (Supplement Fig. S1 / Table S1), recorded rule by rule
+# below. Keys read by the code: cohort_id, era, age_floor, windows, enrollment.gate;
+# the rest records the protocol. config/overlays/<source>.yaml is merged on top.
+# =============================================================================
+
+cohort_id: tte_glp1_psych
+label: "GLP-1RA vs SGLT2i / DPP4i -> psychiatric outcomes (target trial emulation)"
+design: new_user_active_comparator
+
+# ---- Era / population -------------------------------------------------------
+era:
+  index_start: "2019-01-01"     # reference: initiation 2019-01-01 .. 2024-09-30
+  index_end:   "2024-09-30"
+  study_end:   "2024-09-30"     # administrative censoring
+age_floor: 18                   # adults >=18 at entry (upper plausibility cap 110 in build_cohort)
+
+# ---- Exposure: three antidiabetic drug classes ------------------------------
+# Class membership is at the RxNorm ingredient level (ty0_1 resolves ingredient -> descendant
+# drug concepts). A drug concept belongs to a class if any ingredient is in the class list, so
+# combination products count toward their study-class component (Janumet -> DPP4i), mirroring
+# the reference's medication-name matching. Concepts mapping to >=2 study classes are
+# excluded from arm assignment but count as prior use of each component class in the washout.
+exposure:
+  glp1ra:  [albiglutide, dulaglutide, exenatide, liraglutide, lixisenatide, semaglutide, tirzepatide]
+  sglt2i:  [canagliflozin, dapagliflozin, empagliflozin, ertugliflozin, sotagliflozin, bexagliflozin]
+  dpp4i:   [sitagliptin, saxagliptin, alogliptin, linagliptin]
+  same_day_multi_class: drop    # ambiguous treatment assignment -> excluded (reference rule)
+
+# ---- Study clocks -----------------------------------------------------------
+windows:
+  washout_days: 365             # per emulation, over the two compared classes only
+  baseline_days: 365            # covariate assessment window
+  index_day_include_dx: true    # diagnoses ON t0 included in baseline (hdPS convention)
+  index_day_include_drug: false # drugs ON t0 are the exposure itself
+
+# ---- Eligibility (reference Fig. S1) ----------------------------------------
+eligibility:
+  entry: first_in_window_study_class_exposure
+  t2d_ever_required: true               # any T2D diagnosis on or before entry
+  visit_in_prior_365d: true             # >=1 recorded diagnosis date in the 365d before entry
+exclusions:
+  t1d_ever: true
+  esrd_ever: true
+  prior_primary_outcome_ever: true      # new-onset restriction: any of the 6 outcomes before entry
+  prior_antidepressant_or_antipsychotic: true
+
+# ---- Observability gate (OMOP) ----------------------------------------------
+# "off" (quoted: bare off is a YAML boolean) = no gate, as in the reference, whose
+# observability is implicit in the required diagnoses. 'baseline' would require a
+# visit_occurrence footprint bracketing [entry-365d, entry]; 'span' an observation_period
+# span, and raises where the export has none. Only off | baseline | span exist.
+enrollment:
+  gate: "off"
+
+# ---- Outcomes (6 primary psychiatric; ICD-10 prefix sets from lookup_table) --
+# depression F32-F33 | anxiety F40-F45,F48 | bipolar F31 | schizophrenia &
+# psychotic F20-F25,F28-F29 | other mood F30,F34,F39 | suicidal ideation
+# R45.851 (+V62.84 legacy). Follow-up: index+1d .. min(first outcome, death, study_end).
+outcomes:
+  source_csv: lookup_table/outcome_cov_icd.csv
+  primary:
+    - Depression
+    - Anxiety_disorders
+    - Bipolar_disorder
+    - Schizophrenia_and_other_psychotic_disorders
+    - Other_mood_disorders
+    - Suicide_ideation
+
+# ---- Negative control outcomes ----------------------------------------------
+ncos:
+  source_csv: lookup_table/glp_nco_icd_0225.csv      # 90 curated NCOs (master list)
+  panel: lookup_table/glp_nco_reference24.txt        # the reference's reported 24-NCO panel
+  min_prevalence: 0.001                              # reference rule: outcomes with follow-up risk <0.1% excluded
+
+# ---- Baseline covariates (the reference's Table S5 set) --------------------
+covariates:
+  cluster_master_csv: lookup_table/cluster_master.csv   # 441 condition clusters (66k ICD-10)
+  med_classes_csv: lookup_table/huilin_med.csv          # 26 medication classes
+  utilization: [n_ip_admits, n_op_days, n_rx_disp, n_dx_days]   # baseline counts
+  demographics: [age_at_index, sex, cal_year]
+  insurance: ins_category                               # payer_plan_period via datasources/payer_map.py
+
+# ---- hdPS engine params -----------------------------------------------------
+hdps:
+  n_per_dimension: 200
+  min_num_patients: 50
+  k_prioritised: 500
+  domains: [inpatient_dx, inpatient_proc, outpatient_dx, outpatient_proc, drug]
+
+# ---- Emulations (the reference paper's two, each with its own GLP-1 arm) -----
+comparisons:
+  - id: glp1_vs_sglt2
+    treatment: glp1ra
+    comparator: sglt2i
+  - id: glp1_vs_dpp4
+    treatment: glp1ra
+    comparator: dpp4i
+
+# ---- Analysis (ty3) ---------------------------------------------------------
+analysis:
+  specs: [crude, demo, paper, hdps, reclaim-s-only, reclaim-m-only, reclaim-l-only]
+  ps_model: logistic                    # plain logistic for crude/demo/paper/hdps; ridge for embedding specs
+  primary_estimator: siptw_cox          # stabilized IPTW (p1/p99 truncated) + weighted Cox, robust SE
+  estimators: [siptw_cox, psm_cox, strat_cox]
+  psm_caliper: 0.2                      # 1:1 nearest neighbour, caliper 0.2 SD, seed 1
+  caliper_sweep: [0.05, 0.1, 0.2, 0.5, 1]
+  obesity_subgroup: true                # restrict to baseline obesity cluster, refit PS (primary estimator)
+  nco_calibration: true                 # EmpiricalCalibration fitNull -> EASE -> calibrated CI / p
+  balance: smd                          # weighted SMDs, adequate balance < 0.1
+  ph_check: schoenfeld                  # cox.zph on each Cox fit
+
+# ---- OMOP mapping -----------------------------------------------------------
+omop:
+  dx_route: source            # default: ICD-10 prefixes matched on *_source_value (the reference's
+                              # claims semantics); 'standard' matches resolved standard concepts
+  exposure: drug_exposure     # drug_concept_id as the dispensing analogue
+  death_censoring: true       # death observed (person.death_* / death table); censoring = min(death, study_end)

@@ -1,0 +1,42 @@
+\begin{table}[H]
+\centering
+\caption{\textcolor{blue}{Sensitivity analysis: next-year total expenditure forecasting stratified by payer}. Held-out cohort split by the enrollee's payer database: CCAE+MDCR (commercial and Medicare supplemental) and MDCD (Medicaid). Regression on the censored total (R$^2$, MAE in dollars); HNHC identification (next-year total $\geq$ \$30,000; ROC-AUC, PR-AUC). Model definitions as in Table~\ref{tab:expenditure_full_results}.}
+\label{tab:expenditure_by_payer}   % requires \usepackage{booktabs}
+\scriptsize
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{@{}lrrrrrrrr@{}}
+\hline
+ & \multicolumn{4}{c}{\textbf{CCAE+MDCR}} & \multicolumn{4}{c}{\textbf{MDCD}} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}
+\textbf{Model} & \textbf{R$^2$} & \textbf{MAE} & \textbf{ROC-AUC} & \textbf{PR-AUC} & \textbf{R$^2$} & \textbf{MAE} & \textbf{ROC-AUC} & \textbf{PR-AUC} \\
+\hline
+\multicolumn{9}{@{}l}{\textit{Retrospective evaluation; CCAE+MDCR n = 305,211; MDCD n = 51,511}} \\
+Train-mean anchor & -0.000 & 8,284 & -- & -- & -0.017 & 7,707 & -- & -- \\
+Persistence (last-year cost) & 0.089 & 6,344 & -- & -- & 0.380 & 3,005 & -- & -- \\
+LightGBM regressor, 1-yr window & 0.274 & 6,252 & -- & -- & 0.392 & 3,936 & -- & -- \\
+LightGBM classifier, 1-yr window & -- & -- & 0.854 & 0.421 & -- & -- & 0.938 & 0.631 \\
+LightGBM regressor, all history & 0.236 & 6,507 & -- & -- & 0.308 & 4,300 & -- & -- \\
+LightGBM classifier, all history & -- & -- & 0.853 & 0.389 & -- & -- & 0.942 & 0.575 \\
+ReClaim-S, pre-training (MC, 64 trajectories) & 0.367 & 5,320 & 0.863 & 0.487 & 0.451 & 2,693 & 0.935 & 0.682 \\
+ReClaim-M, pre-training (MC, 64 trajectories) & 0.374 & 5,280 & 0.863 & 0.492 & 0.457 & 2,663 & 0.938 & 0.689 \\
+ReClaim-L, pre-training (MC, 64 trajectories) & 0.374 & 5,274 & 0.865 & 0.495 & 0.455 & 2,668 & 0.941 & 0.690 \\
+ReClaim-S, post-training & 0.362 & 5,803 & 0.876 & 0.493 & 0.449 & 2,882 & 0.953 & 0.701 \\
+ReClaim-M, post-training & 0.378 & 6,043 & 0.878 & 0.501 & 0.478 & 2,797 & 0.953 & 0.705 \\
+\textbf{ReClaim-L, post-training} & 0.383 & 5,733 & 0.882 & 0.502 & 0.482 & 2,738 & 0.954 & 0.708 \\
+\hline
+\multicolumn{9}{@{}l}{\textit{Prospective evaluation; CCAE+MDCR n = 59,697; MDCD n = 4,961}} \\
+Train-mean anchor & -0.016 & 10,692 & -- & -- & -0.005 & 9,801 & -- & -- \\
+Persistence (last-year cost) & 0.205 & 8,501 & -- & -- & 0.448 & 5,275 & -- & -- \\
+LightGBM regressor, 1-yr window & 0.319 & 8,195 & -- & -- & 0.389 & 6,051 & -- & -- \\
+LightGBM classifier, 1-yr window & -- & -- & 0.848 & 0.530 & -- & -- & 0.904 & 0.609 \\
+LightGBM regressor, all history & 0.243 & 9,735 & -- & -- & 0.202 & 7,893 & -- & -- \\
+LightGBM classifier, all history & -- & -- & 0.841 & 0.469 & -- & -- & 0.894 & 0.499 \\
+ReClaim-S, pre-training (MC, 64 trajectories) & 0.435 & 7,683 & 0.859 & 0.590 & 0.506 & 6,048 & 0.912 & 0.680 \\
+ReClaim-M, pre-training (MC, 64 trajectories) & 0.448 & 7,416 & 0.871 & 0.600 & 0.517 & 5,438 & 0.920 & 0.696 \\
+ReClaim-L, pre-training (MC, 64 trajectories) & 0.447 & 7,579 & 0.869 & 0.599 & 0.526 & 5,508 & 0.922 & 0.700 \\
+ReClaim-S, post-training & 0.420 & 7,242 & 0.870 & 0.589 & 0.494 & 5,071 & 0.917 & 0.698 \\
+ReClaim-M, post-training & 0.438 & 7,938 & 0.870 & 0.595 & 0.510 & 5,202 & 0.913 & 0.699 \\
+\textbf{ReClaim-L, post-training} & 0.442 & 7,675 & 0.876 & 0.599 & 0.503 & 5,267 & 0.917 & 0.708 \\
+\hline
+\end{tabular}
+\end{table}

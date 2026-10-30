@@ -1,0 +1,23 @@
+Comparison,Source,Specification,EASE,Calibration shift,CI inflation,Equipoise
+vs SGLT2i,Reference (Penn Medicine EHR),Expert,nr,0.081,2.32,nr
+vs SGLT2i,MarketScan,Expert,0.165,0.164,1.14,0.72
+vs SGLT2i,MarketScan,hdPS,0.130,0.130,0.90,0.58
+vs SGLT2i,MarketScan,ReClaim-S,0.139,0.139,1.02,0.79
+vs SGLT2i,MarketScan,ReClaim-M,0.130,0.130,0.92,0.76
+vs SGLT2i,MarketScan,ReClaim-L,0.130,0.130,0.92,0.79
+vs SGLT2i,YNHH,Expert,0.034,0.033,1.11,0.64
+vs SGLT2i,YNHH,hdPS,0.050,0.050,1.05,0.59
+vs SGLT2i,YNHH,ReClaim-S,0.009,0.009,1.01,0.71
+vs SGLT2i,YNHH,ReClaim-M,0.009,0.009,1.01,0.73
+vs SGLT2i,YNHH,ReClaim-L,0.013,0.013,1.02,0.74
+vs DPP4i,Reference (Penn Medicine EHR),Expert,nr,0.044,0.95,nr
+vs DPP4i,MarketScan,Expert,0.059,0.059,0.94,0.41
+vs DPP4i,MarketScan,hdPS,0.026,0.026,0.97,0.33
+vs DPP4i,MarketScan,ReClaim-S,0.007,0.007,0.99,0.48
+vs DPP4i,MarketScan,ReClaim-M,0.003,0.003,1.00,0.47
+vs DPP4i,MarketScan,ReClaim-L,0.001,0.001,1.00,0.52
+vs DPP4i,YNHH,Expert,0.068,0.064,1.39,0.51
+vs DPP4i,YNHH,hdPS,0.082,0.066,1.68,0.44
+vs DPP4i,YNHH,ReClaim-S,0.072,0.065,1.49,0.54
+vs DPP4i,YNHH,ReClaim-M,0.075,0.066,1.57,0.54
+vs DPP4i,YNHH,ReClaim-L,0.064,0.055,1.46,0.56

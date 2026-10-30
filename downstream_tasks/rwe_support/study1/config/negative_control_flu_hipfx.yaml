@@ -1,0 +1,112 @@
+# =============================================================================
+# Cohort negative_control -- influenza vaccination -> hip fracture
+# NEGATIVE control / known null (expected RR ~= 1.0). Schneeweiss 2009, Example Cohort 3.
+# All code CONTENT lives in codesets.py (keyed by cohort_id + role); this config holds the
+# study parameters.
+# =============================================================================
+
+cohort_id: negative_control_flu_hipfx
+label: "Influenza vaccination -> hip fracture"
+control_type: negative          # expected CI covers 1
+design: single_season_new_user   # ONE season (2011), as in the paper's Example Cohort 3. The cell
+                                 # machinery is per season ({stratum}_s{year}).
+
+# ---- Era / population ------------------------------------------------------
+era:
+  index_start: "2008-01-01"     # seasons within 2008-2014 (native ICD-9 era)
+  index_end:   "2014-12-31"
+age_floor: 65                   # >=65 at index
+
+# ---- Season definition -----------------------------------------------------
+season:
+  exposure_window: ["10-01", "12-31"]   # vaccinated: flu vaccine 1 Oct - 31 Dec of season year t
+  followup_months: ["01", "04"]          # outcome window: Jan-Apr of t+1
+  # One season, like the paper's Example Cohort 3. Season 2011 is the earliest season inside the
+  # positive_control index window (2011-2014) and the closest to the reference paper's era.
+  seasons: [2011]
+  analysis: separate                     # per-season cells ({stratum}_s{year}); no pooling estimator
+  primary: 2011
+
+# ---- Exposure / comparator -------------------------------------------------
+# Flu-vaccine codes = codesets.py vaccine['negative_control_flu_hipfx'] (the complete,
+# authoritative list with rationale).
+exposure:
+  # LANDMARK design (the paper's Example Cohort 3): no person-level index dates. Both arms share
+  # the per-season landmark = Oct 1 of t (baseline cutoff). Exposure is a yes/no flag for a
+  # flu-vaccine claim in Oct-Dec t; the whole cohort is then followed over the fixed Jan-Apr t+1
+  # window, as in the paper (shared calendar follow-up).
+  vaccinated:
+    name: flu_vaccine
+    index_rule: landmark_oct1          # exposure = flu claim in Oct-Dec t; index date = the Oct-1 landmark
+    # Qualifying = flu-vaccine proc codes (incl. Medicare Q2035-39) + V04.81/V06.6 dx +
+    # Redbook-resolved pharmacy NDCs. Generic administration codes never count.
+  comparator:
+    name: unvaccinated
+    # eligible enrollee (age + drug-covered + enrolled at the landmark) with no flu-vaccine claim
+    # in Oct-Dec t. Enrollment-at-landmark scopes the comparator to the season.
+    index_assignment: landmark_oct1
+    # The full eligible comparator is kept (the natural vaccinated fraction is reported rather
+    # than engineered toward the paper's ~42%).
+
+# ---- Study clocks ----------------------------------------------------------
+windows:
+  baseline_days: 180            # 180d baseline (parallels positive_control)
+  followup_months: 4            # Jan-Apr of t+1
+  index_day_include_dx: true
+  index_day_include_proc: false
+  index_day_include_drug: false
+
+# ---- Drug-coverage gate ------------------------------------------------------
+# build_cohort keeps only people whose EVERY enrollment plan record has drug coverage
+# (DRUGCOVG/RX == 1); anyone with any non-drug-covered plan record is dropped.
+
+# ---- Observability gate ----------------------------------------------------
+# Scopes the arm=0 comparator to the season, in addition to drug coverage. Modes
+# (datasources/base.py enrollment_gate_mode):
+#   off      = the minimal "enrolled at the Oct-1 landmark" presence test. The reference specifies
+#              the population, a 6-month baseline and censoring at disenrollment, but NO
+#              continuous-enrollment rule; the landmark already enforces presence.
+#   baseline = ACTIVITY: claim footprint brackets the look-back [Oct1 - baseline_days, Oct1].
+#   span     = COVERAGE: enrollment detail brackets the look-back.
+# Every mode tests the look-back only; Jan-Apr disenrollment is censored via person_time (Cox).
+# ENROLLMENT_GATE=<mode> overrides at run time. Bare `off` parses as YAML false; keep it quoted.
+enrollment:
+  gate: "off"
+
+# ---- Exclusions ------------------------------------------------------------
+exclusions:
+  prior_hip_fracture: true      # any time in available look-back
+                                # prior-fx codes = codesets.py prior_exclusion_set (reuses 820.x)
+  bisphosphonate_baseline:      # exclude bisphosphonate use in baseline
+    apply: true                 # drug set = codesets.py drugs['bisphosphonate']
+
+# ---- Outcome: hip fracture (native ICD-9) ----------------------------------
+# Schneeweiss et al. 2009 (Example Cohort 3) defines this outcome only as "hip fracture"; it
+# specifies no ICD code, position, or setting. We use the standard ICD-9-CM 820.x (fracture of
+# neck of femur), with no position requirement (the paper imposes none).
+outcome:
+  name: hip_fracture
+  settings: [inpatient, outpatient]   # setting = MarketScan source table; any position
+  primary: base                 # selects codesets.py outcome_sets['base'] (820.x, both settings)
+
+# ---- Baseline clinical flags (l_*) -------------------------------------------
+# Content in codesets.py predefined['negative_control_flu_hipfx']; used by the Table 1 summaries.
+
+# ---- hdPS engine params (identical base case to positive_control) ------------------------
+hdps:
+  n_per_dimension: 200
+  min_num_patients: 100         # paper: covariates with <100 patients dropped
+  k_prioritised: 500
+  recurrence_tiers: [once, sporadic, frequent]
+  dx_granularity: icd9_3digit
+  interactions: false
+  domains: [inpatient_dx, inpatient_proc, outpatient_dx, outpatient_proc, drug]  # table lineage i/o/d
+  domain_fallback_3: [dx, proc, drug]
+
+strata:
+  - id: MDCR
+    payer: MDCR
+    age_floor: 65
+    role: primary
+embedding:
+  entry_date_embed: month_trunc

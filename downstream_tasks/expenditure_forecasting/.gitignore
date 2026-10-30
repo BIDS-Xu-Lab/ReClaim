@@ -1,0 +1,12 @@
+# site configuration: create from env.sh.example, never commit
+env.sh
+# data, checkpoints, metric tables, caches and logs are produced by a run and never released
+data/
+models/
+results/
+logs/
+slurm_job_logs/*
+!slurm_job_logs/.gitkeep
+*.parquet
+__pycache__/
+*.pyc

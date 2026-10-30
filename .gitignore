@@ -1,16 +1,46 @@
+# Python
 __pycache__/
 *.py[cod]
 *.egg-info/
+
+# Environments and secrets
 .venv/
 venv/
 .env
 
-*.parquet
-*.pkl
-logs/
-outputs/
-
+# Editors, notebooks and OS
 .ipynb_checkpoints/
-.DS_Store
 .idea/
 .vscode/
+.DS_Store
+
+# Files removed from the tree but kept until the deletion is confirmed.
+_trash_quarantine/
+
+# Data. Patient records must never reach this repository.
+*.parquet
+*.pkl
+*.npy
+*.npz
+*.jsonl
+*.h5
+*.feather
+*.arrow
+
+# Run artefacts and logs. SLURM writes slurm-<jobid>.out into the directory the
+# job was submitted from, which is this repository when a job is launched here.
+runs/
+outputs/
+logs/
+*.log
+*.out
+*.err
+wandb/
+
+# Model checkpoints
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin

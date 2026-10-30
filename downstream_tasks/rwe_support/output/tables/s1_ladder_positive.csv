@@ -1,0 +1,8 @@
+PS specification,MarketScan MDCR,Reference,"c-statistic, MarketScan MDCR","c-statistic, reference"
+Unadjusted,1.080 (1.018-1.146),1.09 (0.91-1.30),none (no PS),nr
+Demographics,1.040 (0.980-1.103),1.01 (0.84-1.21),0.555,0.61
+hdPS,1.017 (0.957-1.081),0.87 (0.72-1.05),0.690,0.71
+Delphi,1.009 (0.951-1.072),-,0.655,-
+ReClaim-S,0.924 (0.870-0.983),-,0.744,-
+ReClaim-M,0.913 (0.859-0.972),-,0.755,-
+ReClaim-L,0.911 (0.857-0.969),-,0.751,-

@@ -1,0 +1,10 @@
+| Characteristic | Reference (PACE, Oct-Dec 1996) | MarketScan MDCR, Oct-Dec 2011 |
+|---|---|---|
+| Patients, n | 147,583 | 3,040,767 |
+| Vaccinated, n (%) | nr (42.0) | 463,216 (15.2) |
+| Age at index, years, mean (SD) | nr | 74.9 (7.5) |
+| Female sex, % | nr | 52.9 |
+| Osteoporosis, % | nr | 2.9 |
+| Glucocorticoid use, % | nr | 6.1 |
+| Hip fracture events, n (%) | 710 (0.48) | 8,559 (0.28) |
+| Events in the vaccinated arm, n (%) | nr | 1,173 (0.25) |

@@ -1,0 +1,30 @@
+# Runtime for every module (Python 3.11 + R + the pinned GPU stack). CRAN packages cannot be
+# installed by conda; run install_r_packages.R afterwards from the activated env.
+#
+#   conda env create -f environment.yml
+#   conda activate reclaim-rwe
+#   Rscript install_r_packages.R
+#
+# Spark (pyspark) also needs a Java 17 runtime on PATH (a cluster module or a conda openjdk=17).
+# Record runs: the MarketScan modules ran with Python 3.11.14 / R 4.5.2, the YNHH module with this
+# file's R 4.3.1; both use vllm 0.11.2 (torch 2.9) and pyspark 4.1.1.
+name: reclaim-rwe
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - r-base=4.3.1       # the R release the defaults channel carries; every CRAN package below
+                       # declares R >= 4.1 at most
+  - r-recommended=4.3.1  # conda's r-base does not bundle Matrix/MASS/survival, and current CRAN
+                       # Matrix needs R >= 4.4, so they must come from conda
+  - pip
+  - pip:
+      - vllm==0.11.2   # pulls the pinned GPU stack: torch 2.9, transformers, tokenizers, numpy
+      - pyspark==4.1.1
+      - pandas
+      - pyarrow
+      - duckdb
+      - scikit-learn
+      - matplotlib     # output/scripts/rwe_main_figure.py; 3.11.2 redraws the submitted figure byte for byte
+      - pyyaml
+      - tqdm

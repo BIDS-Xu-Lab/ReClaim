@@ -1,0 +1,7 @@
+# YNHH overlay: the era is identical to the reference (Tang et al.: initiation between
+# 2019-01-01 and 2024-09-30). The YNHH export extends beyond study_end, so the window is fully
+# covered and late-2024 entrants keep post-index observation rather than being cut at data end.
+era:
+  index_start: "2019-01-01"
+  index_end: "2024-09-30"
+  study_end: "2024-09-30"     # censor_date = min(death, study_end)

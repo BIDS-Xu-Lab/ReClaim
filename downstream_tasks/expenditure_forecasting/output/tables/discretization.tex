@@ -1,0 +1,19 @@
+\begin{table}[H]
+\centering
+\caption{\textbf{Effect of cost-token discretization on expenditure labels.} For every enrollee in the retrospective and prospective evaluation cohorts, exact annual expenditure was reconstructed from the raw MarketScan inpatient, outpatient and pharmacy claims and compared with the tokenized total, in which each monthly sum per claim type is rounded to one significant digit (the \texttt{<COST-me>} lattice) before summation, overall and by payer. R$^2$: coefficient of determination of the tokenized annual total against the exact total. HNHC: high-need, high-cost, annual total $\geq$ \$30{,}000; the label is changed by tokenization when it differs between the exact and the tokenized total (among enrollee-years whose exact total lies within $\pm$25\% of the threshold, 12.7\% change; the median absolute relative error of the tokenized total is 4.4\%). Enrollee-years containing a negative monthly sum (refund or adjustment claims, which the tokenizer maps to \$0; 0.15\%) are excluded.}
+\label{tab:discretization}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}lrrr@{}}
+\hline
+ & \textbf{All} & \textbf{CCAE + MDCR} & \textbf{MDCD} \\
+\hline
+Enrollees & 359,187 & 313,491 & 45,696 \\
+Enrollee-years & 2,084,595 & 1,834,235 & 250,360 \\
+R$^2$, tokenized vs exact & 0.993 & 0.993 & 0.989 \\
+HNHC prevalence, exact & 5.24\% & 5.35\% & 4.44\% \\
+HNHC prevalence, tokenized & 5.21\% & 5.32\% & 4.43\% \\
+HNHC label changed by tokenization & 0.42\% & 0.44\% & 0.27\% \\
+\hline
+\end{tabular}
+\end{table}

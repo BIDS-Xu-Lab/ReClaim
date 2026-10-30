@@ -1,0 +1,7 @@
+model,role,size,stage,engine,gpu,n_gpus,patients,trajectories,tokens_generated_per_patient,gpu_s_per_patient,gpu_h,gpu_s_ratio_mc_over_posttrain,token_ratio_mc_over_posttrain,hardware_matched
+reclaim-s-pretrain-64,pretrain,S,pre-training,vllm dp=8,NVIDIA B200,8,421380,64,16769.517902605723,0.3127554701219801,36.608,,,
+reclaim-m-pretrain-64,pretrain,M,pre-training,vllm dp=8,NVIDIA B200,8,421380,64,16769.890716218142,0.4588874649959656,53.713,,,
+reclaim-l-pretrain-64,pretrain,L,pre-training,vllm dp=8,NVIDIA B200,8,421380,64,16799.286852722005,0.7983017703735344,93.442,,,
+reclaim-s-posttrain,posttrain,S,post-training,vllm dp=8,NVIDIA B200,8,421380,1,1.0,0.0037759267169775,0.442,82.82879768713576,16769.517902605723,True
+reclaim-m-posttrain,posttrain,M,post-training,vllm dp=8,NVIDIA B200,8,421380,1,1.0,0.0043438226778679,0.508,105.64138986014126,16769.890716218142,True
+reclaim-l-posttrain,posttrain,L,post-training,vllm dp=8,NVIDIA B200,8,421380,1,1.0,0.0060548673406426,0.709,131.84463431841448,16799.286852722005,True

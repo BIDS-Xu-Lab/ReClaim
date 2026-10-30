@@ -1,0 +1,42 @@
+\begin{table}[H]
+\centering
+\caption{\textcolor{blue}{Complete benchmark results for next-year healthcare expenditure forecasting}. Held-out cohort, retrospective (n = 356,722) and prospective (n = 64,658) evaluations. Regression: total next-year expenditure censored at \$1,000,000 (R$^2$, MAE and RMSE in dollars). HNHC identification: next-year total $\geq$ \$30,000; ROC-AUC and PR-AUC are threshold-free (the classifier's output, the post-trained model's bin mass above the cutoff, or the fraction of Monte-Carlo trajectories above it); F1, precision and recall use predicted dollars $\geq$ the cutoff for every dollar-emitting model and the classifier's argmax. A classifier emits no dollars; the train-mean anchor never flags HNHC. Pre-training = 64-trajectory Monte-Carlo readout of the pre-trained backbone; post-training = the post-trained model (100,000 pairs; one response token, the next-year total).}
+\label{tab:expenditure_full_results}   % requires \usepackage{booktabs}
+\scriptsize
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{@{}lrrrrrrrr@{}}
+\hline
+ & \multicolumn{3}{c}{\textbf{Regression (total expenditure)}} & \multicolumn{5}{c}{\textbf{HNHC identification ($\geq$ \$30,000)}} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-9}
+\textbf{Model} & \textbf{R$^2$} & \textbf{MAE} & \textbf{RMSE} & \textbf{ROC-AUC} & \textbf{PR-AUC} & \textbf{F1} & \textbf{Precision} & \textbf{Recall} \\
+\hline
+\multicolumn{9}{@{}l}{\textit{Retrospective evaluation}} \\
+Train-mean anchor & -0.000 & 8,201 & 23,756 & -- & -- & 0.000 & 0.000 & 0.000 \\
+Persistence (last-year cost) & 0.117 & 5,862 & 22,329 & -- & -- & 0.397 & 0.431 & 0.368 \\
+LightGBM regressor, 1-yr window & 0.286 & 5,918 & 20,072 & -- & -- & 0.409 & 0.559 & 0.322 \\
+LightGBM classifier, 1-yr window & -- & -- & -- & 0.868 & 0.444 & 0.367 & 0.745 & 0.243 \\
+LightGBM regressor, all history & 0.244 & 6,188 & 20,657 & -- & -- & 0.379 & 0.523 & 0.297 \\
+LightGBM classifier, all history & -- & -- & -- & 0.868 & 0.409 & 0.324 & 0.710 & 0.210 \\
+ReClaim-S, pre-training (MC, 64 trajectories) & 0.375 & 4,940 & 18,777 & 0.874 & 0.507 & 0.467 & 0.667 & 0.360 \\
+ReClaim-M, pre-training (MC, 64 trajectories) & 0.383 & 4,902 & 18,668 & 0.875 & 0.512 & 0.470 & 0.672 & 0.361 \\
+ReClaim-L, pre-training (MC, 64 trajectories) & 0.382 & 4,897 & 18,671 & 0.877 & 0.515 & 0.472 & 0.674 & 0.363 \\
+ReClaim-S, post-training & 0.371 & 5,382 & 18,844 & 0.889 & 0.515 & 0.495 & 0.589 & 0.428 \\
+ReClaim-M, post-training & 0.388 & 5,574 & 18,588 & 0.891 & 0.523 & 0.501 & 0.554 & 0.458 \\
+\textbf{ReClaim-L, post-training} & 0.393 & 5,301 & 18,513 & 0.894 & 0.524 & 0.502 & 0.580 & 0.443 \\
+\hline
+\multicolumn{9}{@{}l}{\textit{Prospective evaluation}} \\
+Train-mean anchor & -0.015 & 10,623 & 32,231 & -- & -- & 0.000 & 0.000 & 0.000 \\
+Persistence (last-year cost) & 0.221 & 8,253 & 28,241 & -- & -- & 0.459 & 0.517 & 0.412 \\
+LightGBM regressor, 1-yr window & 0.323 & 8,030 & 26,320 & -- & -- & 0.456 & 0.637 & 0.355 \\
+LightGBM classifier, 1-yr window & -- & -- & -- & 0.853 & 0.535 & 0.432 & 0.806 & 0.295 \\
+LightGBM regressor, all history & 0.241 & 9,594 & 27,883 & -- & -- & 0.435 & 0.468 & 0.407 \\
+LightGBM classifier, all history & -- & -- & -- & 0.845 & 0.469 & 0.421 & 0.672 & 0.307 \\
+ReClaim-S, pre-training (MC, 64 trajectories) & 0.439 & 7,558 & 23,957 & 0.863 & 0.596 & 0.538 & 0.723 & 0.428 \\
+ReClaim-M, pre-training (MC, 64 trajectories) & 0.453 & 7,265 & 23,663 & 0.875 & 0.607 & 0.540 & 0.722 & 0.432 \\
+ReClaim-L, pre-training (MC, 64 trajectories) & 0.452 & 7,420 & 23,688 & 0.874 & 0.606 & 0.542 & 0.718 & 0.435 \\
+ReClaim-S, post-training & 0.425 & 7,076 & 24,254 & 0.874 & 0.597 & 0.556 & 0.697 & 0.463 \\
+ReClaim-M, post-training & 0.443 & 7,728 & 23,892 & 0.874 & 0.602 & 0.561 & 0.607 & 0.520 \\
+\textbf{ReClaim-L, post-training} & 0.446 & 7,491 & 23,811 & 0.880 & 0.606 & 0.563 & 0.630 & 0.509 \\
+\hline
+\end{tabular}
+\end{table}

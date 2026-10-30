@@ -1,0 +1,23 @@
+# Runtime for vocab_mapping/, pipeline_marketscan/ and pipeline_omop/.
+#
+#   conda env create -f environment.yml
+#   conda activate reclaim-preprocessing
+#
+# Spark also needs a Java runtime on PATH. The drivers load it from the cluster's Spark module
+# (SPARK_MODULE in env.sh, which also provides spark-start for pipeline_marketscan/run_marketscan.sh); on a
+# machine without one, add openjdk=17 below and run the stages with plain python (local mode).
+# Package versions of the cluster environment the drivers activate: Python 3.11.14, pyspark 4.1.1,
+# datasets 4.5.0, pandas 2.3.3, numpy 2.2.6, pyarrow 23.0.0, duckdb 1.4.3.
+name: reclaim-preprocessing
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - pyspark==4.1.1
+      - datasets==4.5.0   # s4 deterministic train/val/test split
+      - pandas==2.3.3
+      - numpy==2.2.6
+      - pyarrow==23.0.0
+      - duckdb==1.4.3     # vocab_mapping (procedure and drug mappings)

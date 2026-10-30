@@ -1,0 +1,10 @@
+| Outcome | Unadjusted | Demographics | Expert | hdPS | ReClaim-S | ReClaim-M | ReClaim-L |
+|---|---|---|---|---|---|---|---|
+| Anxiety | 1.18* | 1.03 | 1.01 | 1.02 | 1.06 | 1.10 | 1.09 |
+| Depression | 1.16* | 1.05 | 1.07 | 1.05 | 1.11 | 1.13 | 1.13 |
+| Bipolar | 0.47 | 0.31 | 0.26*† | 0.33 | 0.37 | 0.38 | 0.38 |
+| Other mood | 1.07 | 1.07 | 1.23 | 1.24 | 1.12 | 1.04 | 1.08 |
+| Schizophrenia+ | 1.15 | 1.19 | 1.33 | 1.44 | 1.33 | 1.28 | 1.37 |
+| Suicidal ideation | 0.61 | 0.60 | 0.55 | 0.54 | 0.67 | 0.65 | 0.62 |
+
+* raw 95% CI excludes 1; † calibrated 95% CI excludes 1; NE = not estimable.

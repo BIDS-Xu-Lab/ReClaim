@@ -1,0 +1,1256 @@
+,index,name,count,ICD-10 Chapter,ICD-10 Chapter (short),color,ICD code,ICD Category
+0,13,A00 Cholera,22.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A00,1
+1,14,A01 Typhoid and paratyphoid fevers,132.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A01,1
+2,15,A02 Other salmonella infections,622.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A02,1
+3,16,A03 Shigellosis,170.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A03,1
+4,17,A04 Other bacterial intestinal infections,6494.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A04,1
+5,18,A05 Other bacterial foodborne intoxications,305.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A05,1
+6,19,A06 Amoebiasis,98.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A06,1
+7,20,A07 Other protozoal intestinal diseases,401.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A07,1
+8,21,A08 Viral and other specified intestinal infections,4384.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A08,1
+9,22,A09 Diarrhoea and gastro-enteritis of presumed infectious origin,17287.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A09,1
+10,23,"A15 Respiratory tuberculosis, bacteriologically and histologically confirmed",2176.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A15,1
+11,24,"A16 Respiratory tuberculosis, not confirmed bacteriologically or histologically",528.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A16,1
+12,25,A17 Tuberculosis of nervous system,13.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A17,1
+13,26,A18 Tuberculosis of other organs,156.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A18,1
+14,27,A19 Miliary tuberculosis,16.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A19,1
+15,28,A20 Plague,6.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A20,1
+16,29,A22 Anthrax,2.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A22,1
+17,30,A23 Brucellosis,27.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A23,1
+18,31,A24 Glanders and melioidosis,1.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A24,1
+19,32,A25 Rat-bite fevers,2.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A25,1
+20,33,A26 Erysipeloid,11.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A26,1
+21,34,A27 Leptospirosis,25.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A27,1
+22,35,"A28 Other zoonotic bacterial diseases, not elsewhere classified",45.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A28,1
+23,36,A30 Leprosy [hansen's disease],2.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A30,1
+24,37,A31 Infection due to other mycobacteria,107.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A31,1
+25,38,A32 Listeriosis,20.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A32,1
+26,39,A33 Tetanus neonatorum,1.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A33,1
+27,40,A35 Other tetanus,98.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A35,1
+28,41,A36 Diphtheria,118.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A36,1
+29,42,A37 Whooping cough,1699.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A37,1
+30,43,A38 Scarlet fever,1061.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A38,1
+31,44,A39 Meningococcal infection,86.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A39,1
+32,45,A40 Streptococcal septicaemia,575.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A40,1
+33,46,A41 Other septicaemia,10621.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A41,1
+34,47,A42 Actinomycosis,171.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A42,1
+35,48,A43 Nocardiosis,2.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A43,1
+36,49,A44 Bartonellosis,1.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A44,1
+37,50,A46 Erysipelas,255.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A46,1
+38,51,"A48 Other bacterial diseases, not elsewhere classified",175.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A48,1
+39,52,A49 Bacterial infection of unspecified site,1887.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A49,1
+40,53,A50 Congenital syphilis,9.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A50,1
+41,54,A51 Early syphilis,15.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A51,1
+42,55,A52 Late syphilis,17.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A52,1
+43,56,A53 Other and unspecified syphilis,24.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A53,1
+44,57,A54 Gonococcal infection,223.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A54,1
+45,58,A55 Chlamydial lymphogranuloma venereum,4.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A55,1
+46,59,A56 Other sexually transmitted chlamydial diseases,66.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A56,1
+47,60,A58 Granuloma inguinale,1.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A58,1
+48,61,A59 Trichomoniasis,76.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A59,1
+49,62,A60 Anogenital herpesviral [herpes simplex] infections,352.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A60,1
+50,63,"A63 Other predominantly sexually transmitted diseases, not elsewhere classified",1442.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A63,1
+51,64,A64 Unspecified sexually transmitted disease,3.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A64,1
+52,65,A66 Yaws,15.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A66,1
+53,66,A67 Pinta [carate],6.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A67,1
+54,67,A68 Relapsing fevers,1.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A68,1
+55,68,A69 Other spirochaetal infections,246.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A69,1
+56,69,A70 Chlamydia psittaci infection,27.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A70,1
+57,70,A71 Trachoma,31.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A71,1
+58,71,A74 Other diseases caused by chlamydiae,21.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A74,1
+59,72,A75 Typhus fever,5.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A75,1
+60,73,A77 Spotted fever [tick-borne rickettsioses],21.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A77,1
+61,74,A78 Q fever,10.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A78,1
+62,75,A79 Other rickettsioses,2.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A79,1
+63,76,A80 Acute poliomyelitis,415.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A80,1
+64,77,A81 Atypical virus infections of central nervous system,49.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A81,1
+65,78,A82 Rabies,16.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A82,1
+66,79,A83 Mosquito-borne viral encephalitis,26.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A83,1
+67,80,A84 Tick-borne viral encephalitis,6.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A84,1
+68,81,"A85 Other viral encephalitis, not elsewhere classified",11.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A85,1
+69,82,A86 Unspecified viral encephalitis,100.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A86,1
+70,83,A87 Viral meningitis,406.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A87,1
+71,84,"A88 Other viral infections of central nervous system, not elsewhere classified",20.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A88,1
+72,85,A89 Unspecified viral infection of central nervous system,31.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A89,1
+73,86,A90 Dengue fever [classical dengue],8.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A90,1
+74,87,A91 Dengue haemorrhagic fever,2.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A91,1
+75,88,A92 Other mosquito-borne viral fevers,9.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A92,1
+76,89,"A93 Other arthropod-borne viral fevers, not elsewhere classified",8.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A93,1
+77,90,A94 Unspecified arthropod-borne viral fever,2.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A94,1
+78,91,A95 Yellow fever,58.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A95,1
+79,92,A97 Dengue,32.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A97,1
+80,93,"A98 Other viral haemorrhagic fevers, not elsewhere classified",1.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,A98,1
+81,94,B00 Herpesviral [herpes simplex] infections,3792.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B00,1
+82,95,B01 Varicella [chickenpox],9614.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B01,1
+83,96,B02 Zoster [herpes zoster],12959.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B02,1
+84,97,B03 Smallpox,13.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B03,1
+85,98,B05 Measles,6880.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B05,1
+86,99,B06 Rubella [german measles],2650.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B06,1
+87,100,B07 Viral warts,14183.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B07,1
+88,101,"B08 Other viral infections characterised by skin and mucous membrane lesions, not elsewhere classified",830.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B08,1
+89,102,B09 Unspecified viral infection characterised by skin and mucous membrane lesions,23.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B09,1
+90,103,B15 Acute hepatitis a,882.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B15,1
+91,104,B16 Acute hepatitis b,213.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B16,1
+92,105,B17 Other acute viral hepatitis,235.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B17,1
+93,106,B18 Chronic viral hepatitis,653.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B18,1
+94,107,B19 Unspecified viral hepatitis,1088.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B19,1
+95,108,B20 Human immunodeficiency virus [hiv] disease resulting in infectious and parasitic diseases,51.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B20,1
+96,109,B21 Human immunodeficiency virus [hiv] disease resulting in malignant neoplasms,10.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B21,1
+97,110,B22 Human immunodeficiency virus [hiv] disease resulting in other specified diseases,7.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B22,1
+98,111,B23 Human immunodeficiency virus [hiv] disease resulting in other conditions,27.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B23,1
+99,112,B24 Unspecified human immunodeficiency virus [hiv] disease,391.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B24,1
+100,113,B25 Cytomegaloviral disease,222.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B25,1
+101,114,B26 Mumps,4436.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B26,1
+102,115,B27 Infectious mononucleosis,2631.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B27,1
+103,116,B30 Viral conjunctivitis,163.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B30,1
+104,117,"B33 Other viral diseases, not elsewhere classified",203.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B33,1
+105,118,B34 Viral infection of unspecified site,9617.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B34,1
+106,119,B35 Dermatophytosis,26472.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B35,1
+107,120,B36 Other superficial mycoses,4598.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B36,1
+108,121,B37 Candidiasis,9367.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B37,1
+109,122,B38 Coccidioidomycosis,2.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B38,1
+110,123,B39 Histoplasmosis,8.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B39,1
+111,124,B40 Blastomycosis,1.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B40,1
+112,125,B42 Sporotrichosis,2.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B42,1
+113,126,B43 Chromomycosis and phaeomycotic abscess,2.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B43,1
+114,127,B44 Aspergillosis,338.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B44,1
+115,128,B45 Cryptococcosis,6.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B45,1
+116,129,B46 Zygomycosis,2.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B46,1
+117,130,B47 Mycetoma,18.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B47,1
+118,131,"B48 Other mycoses, not elsewhere classified",26.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B48,1
+119,132,B49 Unspecified mycosis,414.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B49,1
+120,133,B50 Plasmodium falciparum malaria,145.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B50,1
+121,134,B51 Plasmodium vivax malaria,34.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B51,1
+122,135,B52 Plasmodium malariae malaria,4.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B52,1
+123,136,B53 Other parasitologically confirmed malaria,4.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B53,1
+124,137,B54 Unspecified malaria,695.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B54,1
+125,138,B55 Leishmaniasis,16.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B55,1
+126,139,B57 Chagas' disease,1.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B57,1
+127,140,B58 Toxoplasmosis,45.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B58,1
+128,141,B59 Pneumocystosis,118.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B59,1
+129,142,"B60 Other protozoal diseases, not elsewhere classified",11.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B60,1
+130,143,B65 Schistosomiasis [bilharziasis],91.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B65,1
+131,144,B66 Other fluke infections,6.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B66,1
+132,145,B67 Echinococcosis,9.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B67,1
+133,146,B68 Taeniasis,7.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B68,1
+134,147,B69 Cysticercosis,6.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B69,1
+135,148,B71 Other cestode infections,12.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B71,1
+136,149,B73 Onchocerciasis,17.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B73,1
+137,150,B74 Filariasis,4.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B74,1
+138,151,B75 Trichinellosis,,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B75,1
+139,152,B76 Hookworm diseases,28.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B76,1
+140,153,B77 Ascariasis,9.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B77,1
+141,154,B78 Strongyloidiasis,6.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B78,1
+142,155,B79 Trichuriasis,4.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B79,1
+143,156,B80 Enterobiasis,592.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B80,1
+144,157,"B81 Other intestinal helminthiases, not elsewhere classified",14.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B81,1
+145,158,B82 Unspecified intestinal parasitism,73.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B82,1
+146,159,B83 Other helminthiases,62.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B83,1
+147,160,B85 Pediculosis and phthiriasis,258.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B85,1
+148,161,B86 Scabies,1933.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B86,1
+149,162,B87 Myiasis,6.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B87,1
+150,163,B88 Other infestations,146.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B88,1
+151,164,B89 Unspecified parasitic disease,4.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B89,1
+152,165,B90 Sequelae of tuberculosis,43.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B90,1
+153,166,B91 Sequelae of poliomyelitis,192.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B91,1
+154,167,B94 Sequelae of other and unspecified infectious and parasitic diseases,107.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B94,1
+155,168,B95 Streptococcus and staphylococcus as the cause of diseases classified to other chapters,6513.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B95,1
+156,169,B96 Other bacterial agents as the cause of diseases classified to other chapters,13531.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B96,1
+157,170,B97 Viral agents as the cause of diseases classified to other chapters,1528.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B97,1
+158,171,B98 Other specified infectious agents as the cause of diseases classified to other chapters,3483.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B98,1
+159,172,B99 Other and unspecified infectious diseases,769.0,I. Certain infectious and parasitic diseases,I. Infectious Diseases,#98df8a,B99,1
+160,173,D50 Iron deficiency anaemia,22221.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D50,3
+161,174,D51 Vitamin b12 deficiency anaemia,2904.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D51,3
+162,175,D52 Folate deficiency anaemia,601.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D52,3
+163,176,D53 Other nutritional anaemias,202.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D53,3
+164,177,D55 Anaemia due to enzyme disorders,26.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D55,3
+165,178,D56 Thalassaemia,553.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D56,3
+166,179,D57 Sickle-cell disorders,548.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D57,3
+167,180,D58 Other hereditary haemolytic anaemias,224.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D58,3
+168,181,D59 Acquired haemolytic anaemia,270.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D59,3
+169,182,D60 Acquired pure red cell aplasia [erythroblastopenia],17.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D60,3
+170,183,D61 Other aplastic anaemias,1118.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D61,3
+171,184,D62 Acute posthaemorrhagic anaemia,350.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D62,3
+172,185,D63 Anaemia in chronic diseases classified elsewhere,1270.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D63,3
+173,186,D64 Other anaemias,23404.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D64,3
+174,187,D65 Disseminated intravascular coagulation [defibrination syndrome],70.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D65,3
+175,188,D66 Hereditary factor viii deficiency,112.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D66,3
+176,189,D67 Hereditary factor ix deficiency,24.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D67,3
+177,190,D68 Other coagulation defects,2007.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D68,3
+178,191,D69 Purpura and other haemorrhagic conditions,4077.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D69,3
+179,192,D70 Agranulocytosis,5577.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D70,3
+180,193,D71 Functional disorders of polymorphonuclear neutrophils,27.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D71,3
+181,194,D72 Other disorders of white blood cells,1124.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D72,3
+182,195,D73 Diseases of spleen,945.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D73,3
+183,196,D74 Methaemoglobinaemia,7.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D74,3
+184,197,D75 Other diseases of blood and blood-forming organs,1837.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D75,3
+185,198,D76 Certain diseases involving lymphoreticular tissue and reticulohistiocytic system,95.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D76,3
+186,199,D77 Other disorders of blood and blood-forming organs in diseases classified elsewhere,5.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D77,3
+187,200,D80 Immunodeficiency with predominantly antibody defects,315.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D80,3
+188,201,D81 Combined immunodeficiencies,11.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D81,3
+189,202,D82 Immunodeficiency associated with other major defects,34.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D82,3
+190,203,D83 Common variable immunodeficiency,36.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D83,3
+191,204,D84 Other immunodeficiencies,143.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D84,3
+192,205,D86 Sarcoidosis,1626.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D86,3
+193,206,"D89 Other disorders involving the immune mechanism, not elsewhere classified",559.0,III. Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism,III. Blood & Immune Disorders,#ff9896,D89,3
+194,207,E01 Iodine-deficiency-related thyroid disorders and allied conditions,85.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E01,4
+195,208,E02 Subclinical iodine-deficiency hypothyroidism,115.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E02,4
+196,209,E03 Other hypothyroidism,30100.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E03,4
+197,210,E04 Other non-toxic goitre,4190.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E04,4
+198,211,E05 Thyrotoxicosis [hyperthyroidism],6343.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E05,4
+199,212,E06 Thyroiditis,1052.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E06,4
+200,213,E07 Other disorders of thyroid,1876.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E07,4
+201,214,E10 Insulin-dependent diabetes mellitus,4050.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E10,4
+202,215,E11 Non-insulin-dependent diabetes mellitus,32738.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E11,4
+203,216,E12 Malnutrition-related diabetes mellitus,5.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E12,4
+204,217,E13 Other specified diabetes mellitus,394.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E13,4
+205,218,E14 Unspecified diabetes mellitus,20057.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E14,4
+206,219,E15 Nondiabetic hypoglycaemic coma,27.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E15,4
+207,220,E16 Other disorders of pancreatic internal secretion,3293.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E16,4
+208,221,E20 Hypoparathyroidism,193.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E20,4
+209,222,E21 Hyperparathyroidism and other disorders of parathyroid gland,1855.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E21,4
+210,223,E22 Hyperfunction of pituitary gland,825.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E22,4
+211,224,E23 Hypofunction and other disorders of pituitary gland,990.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E23,4
+212,225,E24 Cushing's syndrome,188.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E24,4
+213,226,E25 Adrenogenital disorders,29.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E25,4
+214,227,E26 Hyperaldosteronism,138.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E26,4
+215,228,E27 Other disorders of adrenal gland,1112.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E27,4
+216,229,E28 Ovarian dysfunction,1819.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E28,4
+217,230,E29 Testicular dysfunction,479.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E29,4
+218,231,"E30 Disorders of puberty, not elsewhere classified",15.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E30,4
+219,232,E31 Polyglandular dysfunction,18.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E31,4
+220,233,E32 Diseases of thymus,32.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E32,4
+221,234,E34 Other endocrine disorders,320.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E34,4
+222,235,E35 Disorders of endocrine glands in diseases classified elsewhere,4.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E35,4
+223,236,E41 Nutritional marasmus,14.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E41,4
+224,237,E43 Unspecified severe protein-energy malnutrition,11.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E43,4
+225,238,E44 Protein-energy malnutrition of moderate and mild degree,5.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E44,4
+226,239,E45 Retarded development following protein-energy malnutrition,,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E45,4
+227,240,E46 Unspecified protein-energy malnutrition,420.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E46,4
+228,241,E50 Vitamin a deficiency,9.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E50,4
+229,242,E51 Thiamine deficiency,47.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E51,4
+230,243,E52 Niacin deficiency [pellagra],4.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E52,4
+231,244,E53 Deficiency of other b group vitamins,3042.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E53,4
+232,245,E54 Ascorbic acid deficiency,18.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E54,4
+233,246,E55 Vitamin d deficiency,3799.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E55,4
+234,247,E56 Other vitamin deficiencies,247.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E56,4
+235,248,E58 Dietary calcium deficiency,39.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E58,4
+236,249,E59 Dietary selenium deficiency,2.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E59,4
+237,250,E60 Dietary zinc deficiency,19.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E60,4
+238,251,E61 Deficiency of other nutrient elements,1028.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E61,4
+239,252,E63 Other nutritional deficiencies,41.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E63,4
+240,253,E64 Sequelae of malnutrition and other nutritional deficiencies,3.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E64,4
+241,254,E65 Localised adiposity,116.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E65,4
+242,255,E66 Obesity,35645.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E66,4
+243,256,E67 Other hyperalimentation,10.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E67,4
+244,257,E68 Sequelae of hyperalimentation,,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E68,4
+245,258,E70 Disorders of aromatic amino-acid metabolism,57.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E70,4
+246,259,E71 Disorders of branched-chain amino-acid metabolism and fatty-acid metabolism,12.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E71,4
+247,260,E72 Other disorders of amino-acid metabolism,78.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E72,4
+248,261,E73 Lactose intolerance,398.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E73,4
+249,262,E74 Other disorders of carbohydrate metabolism,345.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E74,4
+250,263,E75 Disorders of sphingolipid metabolism and other lipid storage disorders,93.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E75,4
+251,264,E76 Disorders of glycosaminoglycan metabolism,7.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E76,4
+252,265,E77 Disorders of glycoprotein metabolism,20.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E77,4
+253,266,E78 Disorders of lipoprotein metabolism and other lipidaemias,92742.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E78,4
+254,267,E79 Disorders of purine and pyrimidine metabolism,427.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E79,4
+255,268,E80 Disorders of porphyrin and bilirubin metabolism,1406.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E80,4
+256,269,E83 Disorders of mineral metabolism,5775.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E83,4
+257,270,E84 Cystic fibrosis,111.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E84,4
+258,271,E85 Amyloidosis,317.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E85,4
+259,272,E86 Volume depletion,7017.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E86,4
+260,273,"E87 Other disorders of fluid, electrolyte and acid-base balance",15861.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E87,4
+261,274,E88 Other metabolic disorders,1114.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E88,4
+262,275,"E89 Postprocedural endocrine and metabolic disorders, not elsewhere classified",2536.0,"IV. Endocrine, nutritional and metabolic diseases",IV. Metabolic Diseases,#2ca02c,E89,4
+263,276,F00 Dementia in alzheimer's disease,1341.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F00,5
+264,277,F01 Vascular dementia,1028.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F01,5
+265,278,F02 Dementia in other diseases classified elsewhere,567.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F02,5
+266,279,F03 Unspecified dementia,2352.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F03,5
+267,280,"F04 Organic amnesic syndrome, not induced by alcohol and other psychoactive substances",19.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F04,5
+268,281,"F05 Delirium, not induced by alcohol and other psychoactive substances",3691.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F05,5
+269,282,F06 Other mental disorders due to brain damage and dysfunction and to physical disease,912.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F06,5
+270,283,"F07 Personality and behavioural disorders due to brain disease, damage and dysfunction",180.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F07,5
+271,284,F09 Unspecified organic or symptomatic mental disorder,391.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F09,5
+272,285,F10 Mental and behavioural disorders due to use of alcohol,9391.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F10,5
+273,286,F11 Mental and behavioural disorders due to use of opioids,255.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F11,5
+274,287,F12 Mental and behavioural disorders due to use of cannabinoids,306.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F12,5
+275,288,F13 Mental and behavioural disorders due to use of sedatives or hypnotics,217.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F13,5
+276,289,F14 Mental and behavioural disorders due to use of cocaine,62.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F14,5
+277,290,"F15 Mental and behavioural disorders due to use of other stimulants, including caffeine",60.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F15,5
+278,291,F16 Mental and behavioural disorders due to use of hallucinogens,30.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F16,5
+279,292,F17 Mental and behavioural disorders due to use of tobacco,34472.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F17,5
+280,293,F18 Mental and behavioural disorders due to use of volatile solvents,7.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F18,5
+281,294,F19 Mental and behavioural disorders due to multiple drug use and use of other psychoactive substances,243.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F19,5
+282,295,F20 Schizophrenia,1043.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F20,5
+283,296,F21 Schizotypal disorder,19.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F21,5
+284,297,F22 Persistent delusional disorders,417.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F22,5
+285,298,F23 Acute and transient psychotic disorders,236.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F23,5
+286,299,F24 Induced delusional disorder,3.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F24,5
+287,300,F25 Schizoaffective disorders,260.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F25,5
+288,301,F28 Other nonorganic psychotic disorders,11.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F28,5
+289,302,F29 Unspecified nonorganic psychosis,461.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F29,5
+290,303,F30 Manic episode,385.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F30,5
+291,304,F31 Bipolar affective disorder,1566.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F31,5
+292,305,F32 Depressive episode,46169.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F32,5
+293,306,F33 Recurrent depressive disorder,3026.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F33,5
+294,307,F34 Persistent mood [affective] disorders,736.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F34,5
+295,308,F38 Other mood [affective] disorders,129.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F38,5
+296,309,F39 Unspecified mood [affective] disorder,722.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F39,5
+297,310,F40 Phobic anxiety disorders,3145.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F40,5
+298,311,F41 Other anxiety disorders,23991.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F41,5
+299,312,F42 Obsessive-compulsive disorder,702.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F42,5
+300,313,"F43 Reaction to severe stress, and adjustment disorders",11680.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F43,5
+301,314,F44 Dissociative [conversion] disorders,272.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F44,5
+302,315,F45 Somatoform disorders,2451.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F45,5
+303,316,F48 Other neurotic disorders,304.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F48,5
+304,317,F50 Eating disorders,752.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F50,5
+305,318,F51 Nonorganic sleep disorders,453.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F51,5
+306,319,"F52 Sexual dysfunction, not caused by organic disorder or disease",1912.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F52,5
+307,320,"F53 Mental and behavioural disorders associated with the puerperium, not elsewhere classified",1009.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F53,5
+308,321,F54 Psychological and behavioural factors associated with disorders or diseases classified elsewhere,10.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F54,5
+309,322,F55 Abuse of non-dependence-producing substances,24.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F55,5
+310,323,F59 Unspecified behavioural syndromes associated with physiological disturbances and physical factors,3.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F59,5
+311,324,F60 Specific personality disorders,628.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F60,5
+312,325,F61 Mixed and other personality disorders,29.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F61,5
+313,326,"F62 Enduring personality changes, not attributable to brain damage and disease",36.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F62,5
+314,327,F63 Habit and impulse disorders,44.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F63,5
+315,328,F64 Gender identity disorders,74.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F64,5
+316,329,F65 Disorders of sexual preference,25.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F65,5
+317,330,F66 Psychological and behavioural disorders associated with sexual development and orientation,302.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F66,5
+318,331,F68 Other disorders of adult personality and behaviour,12.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F68,5
+319,332,F69 Unspecified disorder of adult personality and behaviour,123.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F69,5
+320,333,F70 Mild mental retardation,50.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F70,5
+321,334,F71 Moderate mental retardation,10.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F71,5
+322,335,F72 Severe mental retardation,3.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F72,5
+323,336,F78 Other mental retardation,2.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F78,5
+324,337,F79 Unspecified mental retardation,101.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F79,5
+325,338,F80 Specific developmental disorders of speech and language,247.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F80,5
+326,339,F81 Specific developmental disorders of scholastic skills,360.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F81,5
+327,340,F82 Specific developmental disorder of motor function,15.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F82,5
+328,341,F83 Mixed specific developmental disorders,1.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F83,5
+329,342,F84 Pervasive developmental disorders,206.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F84,5
+330,343,F88 Other disorders of psychological development,2.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F88,5
+331,344,F89 Unspecified disorder of psychological development,6.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F89,5
+332,345,F90 Hyperkinetic disorders,49.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F90,5
+333,346,F91 Conduct disorders,118.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F91,5
+334,347,F92 Mixed disorders of conduct and emotions,6.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F92,5
+335,348,F93 Emotional disorders with onset specific to childhood,22.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F93,5
+336,349,F94 Disorders of social functioning with onset specific to childhood and adolescence,3.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F94,5
+337,350,F95 Tic disorders,39.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F95,5
+338,351,F98 Other behavioural and emotional disorders with onset usually occurring in childhood and adolescence,132.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F98,5
+339,352,"F99 Mental disorder, not otherwise specified",350.0,V. Mental and behavioural disorders,V. Mental Disorders,#9edae5,F99,5
+340,353,"G00 Bacterial meningitis, not elsewhere classified",176.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G00,6
+341,354,G01 Meningitis in bacterial diseases classified elsewhere,43.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G01,6
+342,355,G02 Meningitis in other infectious and parasitic diseases classified elsewhere,74.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G02,6
+343,356,G03 Meningitis due to other and unspecified causes,1912.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G03,6
+344,357,"G04 Encephalitis, myelitis and encephalomyelitis",620.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G04,6
+345,358,"G05 Encephalitis, myelitis and encephalomyelitis in diseases classified elsewhere",79.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G05,6
+346,359,G06 Intracranial and intraspinal abscess and granuloma,281.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G06,6
+347,360,G07 Intracranial and intraspinal abscess and granuloma in diseases classified elsewhere,4.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G07,6
+348,361,G08 Intracranial and intraspinal phlebitis and thrombophlebitis,84.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G08,6
+349,362,G09 Sequelae of inflammatory diseases of central nervous system,78.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G09,6
+350,363,G10 Huntington's disease,41.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G10,6
+351,364,G11 Hereditary ataxia,306.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G11,6
+352,365,G12 Spinal muscular atrophy and related syndromes,513.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G12,6
+353,366,G13 Systemic atrophies primarily affecting central nervous system in diseases classified elsewhere,22.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G13,6
+354,367,G14 Postpolio syndrome,61.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G14,6
+355,368,G20 Parkinson's disease,2723.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G20,6
+356,369,G21 Secondary parkinsonism,180.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G21,6
+357,370,G22 Parkinsonism in diseases classified elsewhere,3.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G22,6
+358,371,G23 Other degenerative diseases of basal ganglia,202.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G23,6
+359,372,G24 Dystonia,957.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G24,6
+360,373,G25 Other extrapyramidal and movement disorders,4177.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G25,6
+361,374,G30 Alzheimer's disease,1915.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G30,6
+362,375,"G31 Other degenerative diseases of nervous system, not elsewhere classified",1857.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G31,6
+363,376,G32 Other degenerative disorders of nervous system in diseases classified elsewhere,40.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G32,6
+364,377,G35 Multiple sclerosis,1968.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G35,6
+365,378,G36 Other acute disseminated demyelination,30.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G36,6
+366,379,G37 Other demyelinating diseases of central nervous system,506.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G37,6
+367,380,G40 Epilepsy,6575.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G40,6
+368,381,G41 Status epilepticus,247.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G41,6
+369,382,G43 Migraine,20508.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G43,6
+370,383,G44 Other headache syndromes,4740.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G44,6
+371,384,G45 Transient cerebral ischaemic attacks and related syndromes,7401.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G45,6
+372,385,G46 Vascular syndromes of brain in cerebrovascular diseases,202.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G46,6
+373,386,G47 Sleep disorders,15217.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G47,6
+374,387,G50 Disorders of trigeminal nerve,2532.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G50,6
+375,388,G51 Facial nerve disorders,2758.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G51,6
+376,389,G52 Disorders of other cranial nerves,372.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G52,6
+377,390,G53 Cranial nerve disorders in diseases classified elsewhere,175.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G53,6
+378,391,G54 Nerve root and plexus disorders,1086.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G54,6
+379,392,G55 Nerve root and plexus compressions in diseases classified elsewhere,6587.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G55,6
+380,393,G56 Mononeuropathies of upper limb,19724.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G56,6
+381,394,G57 Mononeuropathies of lower limb,4142.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G57,6
+382,395,G58 Other mononeuropathies,797.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G58,6
+383,396,G59 Mononeuropathy in diseases classified elsewhere,272.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G59,6
+384,397,G60 Hereditary and idiopathic neuropathy,419.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G60,6
+385,398,G61 Inflammatory polyneuropathy,533.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G61,6
+386,399,G62 Other polyneuropathies,3742.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G62,6
+387,400,G63 Polyneuropathy in diseases classified elsewhere,1006.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G63,6
+388,401,G64 Other disorders of peripheral nervous system,230.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G64,6
+389,402,G70 Myasthenia gravis and other myoneural disorders,396.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G70,6
+390,403,G71 Primary disorders of muscles,260.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G71,6
+391,404,G72 Other myopathies,346.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G72,6
+392,405,G73 Disorders of myoneural junction and muscle in diseases classified elsewhere,33.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G73,6
+393,406,G80 Infantile cerebral palsy,256.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G80,6
+394,407,G81 Hemiplegia,3149.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G81,6
+395,408,G82 Paraplegia and tetraplegia,510.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G82,6
+396,409,G83 Other paralytic syndromes,1062.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G83,6
+397,410,G90 Disorders of autonomic nervous system,560.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G90,6
+398,411,G91 Hydrocephalus,811.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G91,6
+399,412,G92 Toxic encephalopathy,16.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G92,6
+400,413,G93 Other disorders of brain,3992.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G93,6
+401,414,G94 Other disorders of brain in diseases classified elsewhere,122.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G94,6
+402,415,G95 Other diseases of spinal cord,1512.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G95,6
+403,416,G96 Other disorders of central nervous system,434.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G96,6
+404,417,"G97 Postprocedural disorders of nervous system, not elsewhere classified",298.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G97,6
+405,418,"G98 Other disorders of nervous system, not elsewhere classified",1690.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G98,6
+406,419,G99 Other disorders of nervous system in diseases classified elsewhere,1857.0,VI. Diseases of the nervous system,VI. Nervous System Diseases,#7f7f7f,G99,6
+407,420,H00 Hordeolum and chalazion,10304.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H00,7
+408,421,H01 Other inflammation of eyelid,4354.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H01,7
+409,422,H02 Other disorders of eyelid,10427.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H02,7
+410,423,H03 Disorders of eyelid in diseases classified elsewhere,72.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H03,7
+411,424,H04 Disorders of lachrymal system,12300.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H04,7
+412,425,H05 Disorders of orbit,928.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H05,7
+413,426,H06 Disorders of lachrymal system and orbit in diseases classified elsewhere,172.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H06,7
+414,427,H10 Conjunctivitis,19057.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H10,7
+415,428,H11 Other disorders of conjunctiva,7008.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H11,7
+416,429,H13 Disorders of conjunctiva in diseases classified elsewhere,121.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H13,7
+417,430,H15 Disorders of sclera,1032.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H15,7
+418,431,H16 Keratitis,1351.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H16,7
+419,432,H17 Corneal scars and opacities,383.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H17,7
+420,433,H18 Other disorders of cornea,2982.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H18,7
+421,434,H19 Disorders of sclera and cornea in diseases classified elsewhere,151.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H19,7
+422,435,H20 Iridocyclitis,2299.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H20,7
+423,436,H21 Other disorders of iris and ciliary body,881.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H21,7
+424,437,H22 Disorders of iris and ciliary body in diseases classified elsewhere,59.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H22,7
+425,438,H25 Senile cataract,20899.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H25,7
+426,439,H26 Other cataract,33220.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H26,7
+427,440,H27 Other disorders of lens,480.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H27,7
+428,441,H28 Cataract and other disorders of lens in diseases classified elsewhere,66.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H28,7
+429,442,H30 Chorioretinal inflammation,187.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H30,7
+430,443,H31 Other disorders of choroid,680.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H31,7
+431,444,H32 Chorioretinal disorders in diseases classified elsewhere,11.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H32,7
+432,445,H33 Retinal detachments and breaks,5727.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H33,7
+433,446,H34 Retinal vascular occlusions,1870.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H34,7
+434,447,H35 Other retinal disorders,12063.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H35,7
+435,448,H36 Retinal disorders in diseases classified elsewhere,3475.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H36,7
+436,449,H40 Glaucoma,14230.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H40,7
+437,450,H42 Glaucoma in diseases classified elsewhere,5.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H42,7
+438,451,H43 Disorders of vitreous body,8832.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H43,7
+439,452,H44 Disorders of globe,1668.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H44,7
+440,453,H45 Disorders of vitreous body and globe in diseases classified elsewhere,22.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H45,7
+441,454,H46 Optic neuritis,416.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H46,7
+442,455,H47 Other disorders of optic [2nd] nerve and visual pathways,1180.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H47,7
+443,456,H48 Disorders of optic [2nd] nerve and visual pathways in diseases classified elsewhere,12.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H48,7
+444,457,H49 Paralytic strabismus,648.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H49,7
+445,458,H50 Other strabismus,2042.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H50,7
+446,459,H51 Other disorders of binocular movement,196.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H51,7
+447,460,H52 Disorders of refraction and accommodation,7305.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H52,7
+448,461,H53 Visual disturbances,10024.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H53,7
+449,462,H54 Blindness and low vision,2867.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H54,7
+450,463,H55 Nystagmus and other irregular eye movements,510.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H55,7
+451,464,H57 Other disorders of eye and adnexa,6534.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H57,7
+452,465,H58 Other disorders of eye and adnexa in diseases classified elsewhere,153.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H58,7
+453,466,"H59 Postprocedural disorders of eye and adnexa, not elsewhere classified",400.0,VII. Diseases of the eye and adnexa,VII. Eye Diseases,#aec7e8,H59,7
+454,467,H60 Otitis externa,17705.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H60,8
+455,468,H61 Other disorders of external ear,24007.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H61,8
+456,469,H62 Disorders of external ear in diseases classified elsewhere,45.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H62,8
+457,470,H65 Nonsuppurative otitis media,4779.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H65,8
+458,471,H66 Suppurative and unspecified otitis media,8180.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H66,8
+459,472,H67 Otitis media in diseases classified elsewhere,11.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H67,8
+460,473,H68 Eustachian salpingitis and obstruction,1999.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H68,8
+461,474,H69 Other disorders of eustachian tube,2162.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H69,8
+462,475,H70 Mastoiditis and related conditions,230.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H70,8
+463,476,H71 Cholesteatoma of middle ear,567.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H71,8
+464,477,H72 Perforation of tympanic membrane,1762.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H72,8
+465,478,H73 Other disorders of tympanic membrane,608.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H73,8
+466,479,H74 Other disorders of middle ear and mastoid,746.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H74,8
+467,480,H75 Other disorders of middle ear and mastoid in diseases classified elsewhere,3.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H75,8
+468,481,H80 Otosclerosis,864.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H80,8
+469,482,H81 Disorders of vestibular function,10045.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H81,8
+470,483,H82 Vertiginous syndromes in diseases classified elsewhere,2.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H82,8
+471,484,H83 Other diseases of inner ear,9702.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H83,8
+472,485,H90 Conductive and sensorineural hearing loss,6494.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H90,8
+473,486,H91 Other hearing loss,13549.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H91,8
+474,487,H92 Otalgia and effusion of ear,13100.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H92,8
+475,488,"H93 Other disorders of ear, not elsewhere classified",11510.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H93,8
+476,489,H94 Other disorders of ear in diseases classified elsewhere,11.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H94,8
+477,490,"H95 Postprocedural disorders of ear and mastoid process, not elsewhere classified",138.0,VIII. Diseases of the ear and mastoid process,VIII. Ear Diseases,#dbdb8d,H95,8
+478,491,I00 Rheumatic fever without mention of heart involvement,1248.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I00,9
+479,492,I01 Rheumatic fever with heart involvement,24.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I01,9
+480,493,I02 Rheumatic chorea,23.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I02,9
+481,494,I05 Rheumatic mitral valve diseases,618.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I05,9
+482,495,I06 Rheumatic aortic valve diseases,84.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I06,9
+483,496,I07 Rheumatic tricuspid valve diseases,1119.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I07,9
+484,497,I08 Multiple valve diseases,4813.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I08,9
+485,498,I09 Other rheumatic heart diseases,100.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I09,9
+486,499,I10 Essential primary hypertension,121844.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I10,9
+487,500,I11 Hypertensive heart disease,543.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I11,9
+488,501,I12 Hypertensive renal disease,1770.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I12,9
+489,502,I13 Hypertensive heart and renal disease,87.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I13,9
+490,503,I15 Secondary hypertension,215.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I15,9
+491,504,I20 Angina pectoris,28131.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I20,9
+492,505,I21 Acute myocardial infarction,17162.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I21,9
+493,506,I22 Subsequent myocardial infarction,751.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I22,9
+494,507,I23 Certain current complications following acute myocardial infarction,70.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I23,9
+495,508,I24 Other acute ischaemic heart diseases,3436.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I24,9
+496,509,I25 Chronic ischaemic heart disease,37719.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I25,9
+497,510,I26 Pulmonary embolism,8450.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I26,9
+498,511,I27 Other pulmonary heart diseases,1941.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I27,9
+499,512,I28 Other diseases of pulmonary vessels,102.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I28,9
+500,513,I30 Acute pericarditis,513.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I30,9
+501,514,I31 Other diseases of pericardium,2375.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I31,9
+502,515,I32 Pericarditis in diseases classified elsewhere,13.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I32,9
+503,516,I33 Acute and subacute endocarditis,411.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I33,9
+504,517,I34 Nonrheumatic mitral valve disorders,5101.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I34,9
+505,518,I35 Nonrheumatic aortic valve disorders,5593.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I35,9
+506,519,I36 Nonrheumatic tricuspid valve disorders,340.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I36,9
+507,520,I37 Pulmonary valve disorders,429.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I37,9
+508,521,"I38 Endocarditis, valve unspecified",754.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I38,9
+509,522,I39 Endocarditis and heart valve disorders in diseases classified elsewhere,9.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I39,9
+510,523,I40 Acute myocarditis,60.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I40,9
+511,524,I41 Myocarditis in diseases classified elsewhere,8.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I41,9
+512,525,I42 Cardiomyopathy,2520.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I42,9
+513,526,I43 Cardiomyopathy in diseases classified elsewhere,85.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I43,9
+514,527,I44 Atrioventricular and left bundle-branch block,8252.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I44,9
+515,528,I45 Other conduction disorders,5220.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I45,9
+516,529,I46 Cardiac arrest,2053.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I46,9
+517,530,I47 Paroxysmal tachycardia,5902.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I47,9
+518,531,I48 Atrial fibrillation and flutter,26754.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I48,9
+519,532,I49 Other cardiac arrhythmias,9073.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I49,9
+520,533,I50 Heart failure,12273.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I50,9
+521,534,I51 Complications and ill-defined descriptions of heart disease,11738.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I51,9
+522,535,I52 Other heart disorders in diseases classified elsewhere,3.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I52,9
+523,536,I60 Subarachnoid haemorrhage,1444.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I60,9
+524,537,I61 Intracerebral haemorrhage,1515.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I61,9
+525,538,I62 Other nontraumatic intracranial haemorrhage,810.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I62,9
+526,539,I63 Cerebral infarction,6548.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I63,9
+527,540,"I64 Stroke, not specified as haemorrhage or infarction",7259.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I64,9
+528,541,"I65 Occlusion and stenosis of precerebral arteries, not resulting in cerebral infarction",1932.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I65,9
+529,542,"I66 Occlusion and stenosis of cerebral arteries, not resulting in cerebral infarction",148.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I66,9
+530,543,I67 Other cerebrovascular diseases,6667.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I67,9
+531,544,I68 Cerebrovascular disorders in diseases classified elsewhere,98.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I68,9
+532,545,I69 Sequelae of cerebrovascular disease,2368.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I69,9
+533,546,I70 Atherosclerosis,2545.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I70,9
+534,547,I71 Aortic aneurysm and dissection,3186.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I71,9
+535,548,I72 Other aneurysm,1085.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I72,9
+536,549,I73 Other peripheral vascular diseases,10044.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I73,9
+537,550,I74 Arterial embolism and thrombosis,1539.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I74,9
+538,551,I77 Other disorders of arteries and arterioles,2501.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I77,9
+539,552,I78 Diseases of capillaries,2287.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I78,9
+540,553,"I79 Disorders of arteries, arterioles and capillaries in diseases classified elsewhere",130.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I79,9
+541,554,I80 Phlebitis and thrombophlebitis,14550.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I80,9
+542,555,I81 Portal vein thrombosis,321.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I81,9
+543,556,I82 Other venous embolism and thrombosis,971.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I82,9
+544,557,I83 Varicose veins of lower extremities,19156.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I83,9
+545,558,I84 Haemorrhoids,25572.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I84,9
+546,559,I85 Oesophageal varices,895.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I85,9
+547,560,I86 Varicose veins of other sites,1763.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I86,9
+548,561,I87 Other disorders of veins,1498.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I87,9
+549,562,I88 Nonspecific lymphadenitis,375.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I88,9
+550,563,I89 Other non-infective disorders of lymphatic vessels and lymph nodes,2065.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I89,9
+551,564,I95 Hypotension,13253.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I95,9
+552,565,"I97 Postprocedural disorders of circulatory system, not elsewhere classified",310.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I97,9
+553,566,I98 Other disorders of circulatory system in diseases classified elsewhere,439.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I98,9
+554,567,I99 Other and unspecified disorders of circulatory system,464.0,IX. Diseases of the circulatory system,IX. Circulatory Diseases,#d62728,I99,9
+555,568,J00 Acute nasopharyngitis [common cold],4438.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J00,10
+556,569,J01 Acute sinusitis,19711.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J01,10
+557,570,J02 Acute pharyngitis,19269.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J02,10
+558,571,J03 Acute tonsillitis,13235.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J03,10
+559,572,J04 Acute laryngitis and tracheitis,3656.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J04,10
+560,573,J05 Acute obstructive laryngitis [croup] and epiglottitis,137.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J05,10
+561,574,J06 Acute upper respiratory infections of multiple and unspecified sites,41759.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J06,10
+562,575,J09 Influenza due to certain identified influenza virus,21.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J09,10
+563,576,J10 Influenza due to identified influenza virus,1252.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J10,10
+564,577,"J11 Influenza, virus not identified",8880.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J11,10
+565,578,"J12 Viral pneumonia, not elsewhere classified",710.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J12,10
+566,579,J13 Pneumonia due to streptococcus pneumoniae,844.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J13,10
+567,580,J14 Pneumonia due to haemophilus influenzae,181.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J14,10
+568,581,"J15 Bacterial pneumonia, not elsewhere classified",1096.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J15,10
+569,582,"J16 Pneumonia due to other infectious organisms, not elsewhere classified",83.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J16,10
+570,583,J17 Pneumonia in diseases classified elsewhere,273.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J17,10
+571,584,"J18 Pneumonia, organism unspecified",25641.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J18,10
+572,585,J20 Acute bronchitis,4413.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J20,10
+573,586,J21 Acute bronchiolitis,128.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J21,10
+574,587,J22 Unspecified acute lower respiratory infection,50475.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J22,10
+575,588,J30 Vasomotor and allergic rhinitis,39299.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J30,10
+576,589,"J31 Chronic rhinitis, nasopharyngitis and pharyngitis",5563.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J31,10
+577,590,J32 Chronic sinusitis,10710.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J32,10
+578,591,J33 Nasal polyp,6118.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J33,10
+579,592,J34 Other disorders of nose and nasal sinuses,14219.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J34,10
+580,593,J35 Chronic diseases of tonsils and adenoids,1510.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J35,10
+581,594,J36 Peritonsillar abscess,746.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J36,10
+582,595,J37 Chronic laryngitis and laryngotracheitis,476.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J37,10
+583,596,"J38 Diseases of vocal cords and larynx, not elsewhere classified",2873.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J38,10
+584,597,J39 Other diseases of upper respiratory tract,1500.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J39,10
+585,598,"J40 Bronchitis, not specified as acute or chronic",7687.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J40,10
+586,599,J41 Simple and mucopurulent chronic bronchitis,95.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J41,10
+587,600,J42 Unspecified chronic bronchitis,559.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J42,10
+588,601,J43 Emphysema,3676.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J43,10
+589,602,J44 Other chronic obstructive pulmonary disease,16863.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J44,10
+590,603,J45 Asthma,57082.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J45,10
+591,604,J46 Status asthmaticus,438.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J46,10
+592,605,J47 Bronchiectasis,4584.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J47,10
+593,606,J60 Coalworker's pneumoconiosis,42.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J60,10
+594,607,J61 Pneumoconiosis due to asbestos and other mineral fibres,537.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J61,10
+595,608,J62 Pneumoconiosis due to dust containing silica,17.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J62,10
+596,609,J63 Pneumoconiosis due to other inorganic dusts,25.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J63,10
+597,610,J64 Unspecified pneumoconiosis,48.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J64,10
+598,611,J66 Airway disease due to specific organic dust,2.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J66,10
+599,612,J67 Hypersensitivity pneumonitis due to organic dust,192.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J67,10
+600,613,"J68 Respiratory conditions due to inhalation of chemicals, gases, fumes and vapours",27.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J68,10
+601,614,J69 Pneumonitis due to solids and liquids,1997.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J69,10
+602,615,J70 Respiratory conditions due to other external agents,132.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J70,10
+603,616,J80 Adult respiratory distress syndrome,300.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J80,10
+604,617,J81 Pulmonary oedema,981.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J81,10
+605,618,"J82 Pulmonary eosinophilia, not elsewhere classified",160.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J82,10
+606,619,J84 Other interstitial pulmonary diseases,2768.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J84,10
+607,620,J85 Abscess of lung and mediastinum,185.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J85,10
+608,621,J86 Pyothorax,565.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J86,10
+609,622,"J90 Pleural effusion, not elsewhere classified",10870.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J90,10
+610,623,J91 Pleural effusion in conditions classified elsewhere,337.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J91,10
+611,624,J92 Pleural plaque,1863.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J92,10
+612,625,J93 Pneumothorax,2600.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J93,10
+613,626,J94 Other pleural conditions,617.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J94,10
+614,627,"J95 Postprocedural respiratory disorders, not elsewhere classified",584.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J95,10
+615,628,"J96 Respiratory failure, not elsewhere classified",5384.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J96,10
+616,629,J98 Other respiratory disorders,15500.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J98,10
+617,630,J99 Respiratory disorders in diseases classified elsewhere,386.0,X. Diseases of the respiratory system,X. Respiratory Diseases,#17becf,J99,10
+618,631,K00 Disorders of tooth development and eruption,231.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K00,11
+619,632,K01 Embedded and impacted teeth,2238.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K01,11
+620,633,K02 Dental caries,4787.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K02,11
+621,634,K03 Other diseases of hard tissues of teeth,144.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K03,11
+622,635,K04 Diseases of pulp and periapical tissues,6683.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K04,11
+623,636,K05 Gingivitis and periodontal diseases,1672.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K05,11
+624,637,K06 Other disorders of gingiva and edentulous alveolar ridge,616.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K06,11
+625,638,K07 Dentofacial anomalies [including malocclusion],2138.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K07,11
+626,639,K08 Other disorders of teeth and supporting structures,3951.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K08,11
+627,640,"K09 Cysts of oral region, not elsewhere classified",749.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K09,11
+628,641,K10 Other diseases of jaws,1552.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K10,11
+629,642,K11 Diseases of salivary glands,2837.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K11,11
+630,643,K12 Stomatitis and related lesions,3358.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K12,11
+631,644,K13 Other diseases of lip and oral mucosa,6075.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K13,11
+632,645,K14 Diseases of tongue,3097.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K14,11
+633,646,K20 Oesophagitis,13664.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K20,11
+634,647,K21 Gastro-oesophageal reflux disease,57621.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K21,11
+635,648,K22 Other diseases of oesophagus,16766.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K22,11
+636,649,K23 Disorders of oesophagus in diseases classified elsewhere,82.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K23,11
+637,650,K25 Gastric ulcer,9665.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K25,11
+638,651,K26 Duodenal ulcer,7601.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K26,11
+639,652,"K27 Peptic ulcer, site unspecified",1452.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K27,11
+640,653,K28 Gastrojejunal ulcer,91.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K28,11
+641,654,K29 Gastritis and duodenitis,46399.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K29,11
+642,655,K30 Dyspepsia,15533.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K30,11
+643,656,K31 Other diseases of stomach and duodenum,14098.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K31,11
+644,657,K35 Acute appendicitis,3931.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K35,11
+645,658,K36 Other appendicitis,143.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K36,11
+646,659,K37 Unspecified appendicitis,4876.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K37,11
+647,660,K38 Other diseases of appendix,439.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K38,11
+648,661,K40 Inguinal hernia,24122.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K40,11
+649,662,K41 Femoral hernia,1138.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K41,11
+650,663,K42 Umbilical hernia,6695.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K42,11
+651,664,K43 Ventral hernia,5729.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K43,11
+652,665,K44 Diaphragmatic hernia,43118.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K44,11
+653,666,K45 Other abdominal hernia,213.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K45,11
+654,667,K46 Unspecified abdominal hernia,1762.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K46,11
+655,668,K50 Crohn's disease [regional enteritis],2563.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K50,11
+656,669,K51 Ulcerative colitis,4931.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K51,11
+657,670,K52 Other non-infective gastro-enteritis and colitis,22547.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K52,11
+658,671,K55 Vascular disorders of intestine,2225.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K55,11
+659,672,K56 Paralytic ileus and intestinal obstruction without hernia,7214.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K56,11
+660,673,K57 Diverticular disease of intestine,49461.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K57,11
+661,674,K58 Irritable bowel syndrome,27274.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K58,11
+662,675,K59 Other functional intestinal disorders,25442.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K59,11
+663,676,K60 Fissure and fistula of anal and rectal regions,5449.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K60,11
+664,677,K61 Abscess of anal and rectal regions,2479.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K61,11
+665,678,K62 Other diseases of anus and rectum,36313.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K62,11
+666,679,K63 Other diseases of intestine,26483.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K63,11
+667,680,K64 Haemorrhoids and perianal venous thrombosis,35010.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K64,11
+668,681,K65 Peritonitis,2733.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K65,11
+669,682,K66 Other disorders of peritoneum,6075.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K66,11
+670,683,K67 Disorders of peritoneum in infectious diseases classified elsewhere,8.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K67,11
+671,684,K70 Alcoholic liver disease,1605.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K70,11
+672,685,K71 Toxic liver disease,151.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K71,11
+673,686,"K72 Hepatic failure, not elsewhere classified",831.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K72,11
+674,687,"K73 Chronic hepatitis, not elsewhere classified",270.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K73,11
+675,688,K74 Fibrosis and cirrhosis of liver,1940.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K74,11
+676,689,K75 Other inflammatory liver diseases,2044.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K75,11
+677,690,K76 Other diseases of liver,10203.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K76,11
+678,691,K77 Liver disorders in diseases classified elsewhere,37.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K77,11
+679,692,K80 Cholelithiasis,25340.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K80,11
+680,693,K81 Cholecystitis,4865.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K81,11
+681,694,K82 Other diseases of gallbladder,3164.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K82,11
+682,695,K83 Other diseases of biliary tract,3783.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K83,11
+683,696,K85 Acute pancreatitis,3407.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K85,11
+684,697,K86 Other diseases of pancreas,2343.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K86,11
+685,698,"K87 Disorders of gallbladder, biliary tract and pancreas in diseases classified elsewhere",5.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K87,11
+686,699,K90 Intestinal malabsorption,3836.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K90,11
+687,700,"K91 Postprocedural disorders of digestive system, not elsewhere classified",2547.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K91,11
+688,701,K92 Other diseases of digestive system,17549.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K92,11
+689,702,K93 Disorders of other digestive organs in diseases classified elsewhere,20.0,XI. Diseases of the digestive system,XI. Digestive Diseases,#8c564b,K93,11
+690,703,L00 Staphylococcal scalded skin syndrome,7.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L00,12
+691,704,L01 Impetigo,1161.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L01,12
+692,705,"L02 Cutaneous abscess, furuncle and carbuncle",10129.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L02,12
+693,706,L03 Cellulitis,25550.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L03,12
+694,707,L04 Acute lymphadenitis,623.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L04,12
+695,708,L05 Pilonidal cyst,1251.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L05,12
+696,709,L08 Other local infections of skin and subcutaneous tissue,12214.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L08,12
+697,710,L10 Pemphigus,73.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L10,12
+698,711,L11 Other acantholytic disorders,98.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L11,12
+699,712,L12 Pemphigoid,168.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L12,12
+700,713,L13 Other bullous disorders,110.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L13,12
+701,714,L14 Bullous disorders in diseases classified elsewhere,1.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L14,12
+702,715,L20 Atopic dermatitis,11142.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L20,12
+703,716,L21 Seborrhoeic dermatitis,8031.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L21,12
+704,717,L22 Diaper [napkin] dermatitis,50.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L22,12
+705,718,L23 Allergic contact dermatitis,735.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L23,12
+706,719,L24 Irritant contact dermatitis,654.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L24,12
+707,720,L25 Unspecified contact dermatitis,2624.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L25,12
+708,721,L26 Exfoliative dermatitis,16.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L26,12
+709,722,L27 Dermatitis due to substances taken internally,992.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L27,12
+710,723,L28 Lichen simplex chronicus and prurigo,1380.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L28,12
+711,724,L29 Pruritus,10118.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L29,12
+712,725,L30 Other dermatitis,38463.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L30,12
+713,726,L40 Psoriasis,11840.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L40,12
+714,727,L41 Parapsoriasis,103.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L41,12
+715,728,L42 Pityriasis rosea,1304.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L42,12
+716,729,L43 Lichen planus,2070.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L43,12
+717,730,L44 Other papulosquamous disorders,65.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L44,12
+718,731,L50 Urticaria,8861.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L50,12
+719,732,L51 Erythema multiforme,285.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L51,12
+720,733,L52 Erythema nodosum,234.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L52,12
+721,734,L53 Other erythematous conditions,1267.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L53,12
+722,735,L54 Erythema in diseases classified elsewhere,2.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L54,12
+723,736,L55 Sunburn,324.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L55,12
+724,737,L56 Other acute skin changes due to ultraviolet radiation,510.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L56,12
+725,738,L57 Skin changes due to chronic exposure to nonionising radiation,16290.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L57,12
+726,739,L58 Radiodermatitis,21.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L58,12
+727,740,L59 Other disorders of skin and subcutaneous tissue related to radiation,67.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L59,12
+728,741,L60 Nail disorders,9129.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L60,12
+729,742,L62 Nail disorders in diseases classified elsewhere,1.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L62,12
+730,743,L63 Alopecia areata,729.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L63,12
+731,744,L64 Androgenic alopecia,133.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L64,12
+732,745,L65 Other nonscarring hair loss,2680.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L65,12
+733,746,L66 Cicatricial alopecia [scarring hair loss],185.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L66,12
+734,747,L67 Hair colour and hair shaft abnormalities,29.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L67,12
+735,748,L68 Hypertrichosis,430.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L68,12
+736,749,L70 Acne,4624.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L70,12
+737,750,L71 Rosacea,4780.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L71,12
+738,751,L72 Follicular cysts of skin and subcutaneous tissue,12753.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L72,12
+739,752,L73 Other follicular disorders,3035.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L73,12
+740,753,L74 Eccrine sweat disorders,907.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L74,12
+741,754,L75 Apocrine sweat disorders,12.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L75,12
+742,755,L80 Vitiligo,941.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L80,12
+743,756,L81 Other disorders of pigmentation,3784.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L81,12
+744,757,L82 Seborrhoeic keratosis,24615.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L82,12
+745,758,L83 Acanthosis nigricans,160.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L83,12
+746,759,L84 Corns and callosities,3086.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L84,12
+747,760,L85 Other epidermal thickening,3017.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L85,12
+748,761,L86 Keratoderma in diseases classified elsewhere,,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L86,12
+749,762,L87 Transepidermal elimination disorders,18.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L87,12
+750,763,L88 Pyoderma gangrenosum,67.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L88,12
+751,764,L89 Decubitus ulcer,3328.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L89,12
+752,765,L90 Atrophic disorders of skin,4940.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L90,12
+753,766,L91 Hypertrophic disorders of skin,4166.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L91,12
+754,767,L92 Granulomatous disorders of skin and subcutaneous tissue,1547.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L92,12
+755,768,L93 Lupus erythematosus,402.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L93,12
+756,769,L94 Other localised connective tissue disorders,510.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L94,12
+757,770,"L95 Vasculitis limited to skin, not elsewhere classified",253.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L95,12
+758,771,"L97 Ulcer of lower limb, not elsewhere classified",2563.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L97,12
+759,772,"L98 Other disorders of skin and subcutaneous tissue, not elsewhere classified",37961.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L98,12
+760,773,L99 Other disorders of skin and subcutaneous tissue in diseases classified elsewhere,19.0,XII. Diseases of the skin and subcutaneous tissue,XII. Skin Diseases,#c49c94,L99,12
+761,774,M00 Pyogenic arthritis,707.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M00,13
+762,775,M01 Direct infections of joint in infectious and parasitic diseases classified elsewhere,31.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M01,13
+763,776,M02 Reactive arthropathies,210.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M02,13
+764,777,M03 Postinfective and reactive arthropathies in diseases classified elsewhere,9.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M03,13
+765,778,M05 Seropositive rheumatoid arthritis,988.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M05,13
+766,779,M06 Other rheumatoid arthritis,9453.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M06,13
+767,780,M07 Psoriatic and enteropathic arthropathies,1102.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M07,13
+768,781,M08 Juvenile arthritis,78.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M08,13
+769,782,M09 Juvenile arthritis in diseases classified elsewhere,2.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M09,13
+770,783,M10 Gout,15065.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M10,13
+771,784,M11 Other crystal arthropathies,858.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M11,13
+772,785,M12 Other specific arthropathies,556.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M12,13
+773,786,M13 Other arthritis,31930.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M13,13
+774,787,M14 Arthropathies in other diseases classified elsewhere,230.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M14,13
+775,788,M15 Polyarthrosis,11039.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M15,13
+776,789,M16 Coxarthrosis [arthrosis of hip],19626.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M16,13
+777,790,M17 Gonarthrosis [arthrosis of knee],34174.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M17,13
+778,791,M18 Arthrosis of first carpometacarpal joint,2126.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M18,13
+779,792,M19 Other arthrosis,66680.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M19,13
+780,793,M20 Acquired deformities of fingers and toes,17412.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M20,13
+781,794,M21 Other acquired deformities of limbs,4201.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M21,13
+782,795,M22 Disorders of patella,2640.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M22,13
+783,796,M23 Internal derangement of knee,18597.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M23,13
+784,797,M24 Other specific joint derangements,4092.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M24,13
+785,798,"M25 Other joint disorders, not elsewhere classified",72060.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M25,13
+786,799,M30 Polyarteritis nodosa and related conditions,159.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M30,13
+787,800,M31 Other necrotising vasculopathies,1435.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M31,13
+788,801,M32 Systemic lupus erythematosus,833.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M32,13
+789,802,M33 Dermatopolymyositis,198.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M33,13
+790,803,M34 Systemic sclerosis,359.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M34,13
+791,804,M35 Other systemic involvement of connective tissue,5243.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M35,13
+792,805,M36 Systemic disorders of connective tissue in diseases classified elsewhere,46.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M36,13
+793,806,M40 Kyphosis and lordosis,700.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M40,13
+794,807,M41 Scoliosis,3135.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M41,13
+795,808,M42 Spinal osteochondrosis,140.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M42,13
+796,809,M43 Other deforming dorsopathies,5062.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M43,13
+797,810,M45 Ankylosing spondylitis,1675.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M45,13
+798,811,M46 Other inflammatory spondylopathies,3737.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M46,13
+799,812,M47 Spondylosis,26736.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M47,13
+800,813,M48 Other spondylopathies,12178.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M48,13
+801,814,M49 Spondylopathies in diseases classified elsewhere,257.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M49,13
+802,815,M50 Cervical disk disorders,3662.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M50,13
+803,816,M51 Other intervertebral disk disorders,20906.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M51,13
+804,817,"M53 Other dorsopathies, not elsewhere classified",5169.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M53,13
+805,818,M54 Dorsalgia,61781.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M54,13
+806,819,M60 Myositis,439.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M60,13
+807,820,M61 Calcification and ossification of muscle,70.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M61,13
+808,821,M62 Other disorders of muscle,3849.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M62,13
+809,822,M63 Disorders of muscle in diseases classified elsewhere,4.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M63,13
+810,823,M65 Synovitis and tenosynovitis,15516.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M65,13
+811,824,M66 Spontaneous rupture of synovium and tendon,1157.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M66,13
+812,825,M67 Other disorders of synovium and tendon,9643.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M67,13
+813,826,M68 Disorders of synovium and tendon in diseases classified elsewhere,5.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M68,13
+814,827,"M70 Soft tissue disorders related to use, overuse and pressure",13353.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M70,13
+815,828,M71 Other bursopathies,2847.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M71,13
+816,829,M72 Fibroblastic disorders,19730.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M72,13
+817,830,M73 Soft tissue disorders in diseases classified elsewhere,,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M73,13
+818,831,M75 Shoulder lesions,27499.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M75,13
+819,832,"M76 Enthesopathies of lower limb, excluding foot",6516.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M76,13
+820,833,M77 Other enthesopathies,26430.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M77,13
+821,834,"M79 Other soft tissue disorders, not elsewhere classified",69490.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M79,13
+822,835,M80 Osteoporosis with pathological fracture,1710.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M80,13
+823,836,M81 Osteoporosis without pathological fracture,18176.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M81,13
+824,837,M82 Osteoporosis in diseases classified elsewhere,160.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M82,13
+825,838,M83 Adult osteomalacia,95.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M83,13
+826,839,M84 Disorders of continuity of bone,3158.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M84,13
+827,840,M85 Other disorders of bone density and structure,11618.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M85,13
+828,841,M86 Osteomyelitis,2093.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M86,13
+829,842,M87 Osteonecrosis,842.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M87,13
+830,843,M88 Paget's disease of bone [osteitis deformans],431.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M88,13
+831,844,M89 Other disorders of bone,4391.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M89,13
+832,845,M90 Osteopathies in diseases classified elsewhere,641.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M90,13
+833,846,M91 Juvenile osteochondrosis of hip and pelvis,167.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M91,13
+834,847,M92 Other juvenile osteochondrosis,550.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M92,13
+835,848,M93 Other osteochondropathies,696.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M93,13
+836,849,M94 Other disorders of cartilage,2256.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M94,13
+837,850,M95 Other acquired deformities of musculoskeletal system and connective tissue,1810.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M95,13
+838,851,"M96 Postprocedural musculoskeletal disorders, not elsewhere classified",818.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M96,13
+839,852,"M99 Biomechanical lesions, not elsewhere classified",373.0,XIII. Diseases of the musculoskeletal system and connective tissue,XIII. Musculoskeletal Diseases,#1f77b4,M99,13
+840,853,N00 Acute nephritic syndrome,227.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N00,14
+841,854,N01 Rapidly progressive nephritic syndrome,12.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N01,14
+842,855,N02 Recurrent and persistent haematuria,1183.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N02,14
+843,856,N03 Chronic nephritic syndrome,1025.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N03,14
+844,857,N04 Nephrotic syndrome,326.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N04,14
+845,858,N05 Unspecified nephritic syndrome,616.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N05,14
+846,859,N06 Isolated proteinuria with specified morphological lesion,16.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N06,14
+847,860,"N07 Hereditary nephropathy, not elsewhere classified",11.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N07,14
+848,861,N08 Glomerular disorders in diseases classified elsewhere,819.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N08,14
+849,862,N10 Acute tubulo-interstitial nephritis,1265.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N10,14
+850,863,N11 Chronic tubulo-interstitial nephritis,270.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N11,14
+851,864,"N12 Tubulo-interstitial nephritis, not specified as acute or chronic",1968.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N12,14
+852,865,N13 Obstructive and reflux uropathy,4987.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N13,14
+853,866,N14 Drug- and heavy-metal-induced tubulo-interstitial and tubular conditions,67.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N14,14
+854,867,N15 Other renal tubulo-interstitial diseases,173.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N15,14
+855,868,N16 Renal tubulo-interstitial disorders in diseases classified elsewhere,48.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N16,14
+856,869,N17 Acute renal failure,14126.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N17,14
+857,870,N18 Chronic renal failure,19401.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N18,14
+858,871,N19 Unspecified renal failure,2751.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N19,14
+859,872,N20 Calculus of kidney and ureter,7187.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N20,14
+860,873,N21 Calculus of lower urinary tract,1268.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N21,14
+861,874,N22 Calculus of urinary tract in diseases classified elsewhere,,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N22,14
+862,875,N23 Unspecified renal colic,4526.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N23,14
+863,876,N25 Disorders resulting from impaired renal tubular function,189.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N25,14
+864,877,N26 Unspecified contracted kidney,291.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N26,14
+865,878,N27 Small kidney of unknown cause,114.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N27,14
+866,879,"N28 Other disorders of kidney and ureter, not elsewhere classified",7088.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N28,14
+867,880,N29 Other disorders of kidney and ureter in diseases classified elsewhere,36.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N29,14
+868,881,N30 Cystitis,14539.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N30,14
+869,882,"N31 Neuromuscular dysfunction of bladder, not elsewhere classified",4036.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N31,14
+870,883,N32 Other disorders of bladder,15631.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N32,14
+871,884,N33 Bladder disorders in diseases classified elsewhere,7.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N33,14
+872,885,N34 Urethritis and urethral syndrome,908.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N34,14
+873,886,N35 Urethral stricture,4509.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N35,14
+874,887,N36 Other disorders of urethra,1293.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N36,14
+875,888,N37 Urethral disorders in diseases classified elsewhere,5.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N37,14
+876,889,N39 Other disorders of urinary system,41174.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N39,14
+877,890,N40 Hyperplasia of prostate,25062.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N40,14
+878,891,N41 Inflammatory diseases of prostate,3685.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N41,14
+879,892,N42 Other disorders of prostate,2665.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N42,14
+880,893,N43 Hydrocele and spermatocele,2117.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N43,14
+881,894,N44 Torsion of testis,194.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N44,14
+882,895,N45 Orchitis and epididymitis,2378.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N45,14
+883,896,N46 Male infertility,479.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N46,14
+884,897,"N47 Redundant prepuce, phimosis and paraphimosis",3074.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N47,14
+885,898,N48 Other disorders of penis,5545.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N48,14
+886,899,"N49 Inflammatory disorders of male genital organs, not elsewhere classified",393.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N49,14
+887,900,N50 Other disorders of male genital organs,9385.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N50,14
+888,901,N51 Disorders of male genital organs in diseases classified elsewhere,37.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N51,14
+889,902,N60 Benign mammary dysplasia,9889.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N60,14
+890,903,N61 Inflammatory disorders of breast,1594.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N61,14
+891,904,N62 Hypertrophy of breast,1713.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N62,14
+892,905,N63 Unspecified lump in breast,12916.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N63,14
+893,906,N64 Other disorders of breast,10857.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N64,14
+894,907,N70 Salpingitis and oophoritis,901.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N70,14
+895,908,"N71 Inflammatory disease of uterus, except cervix",446.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N71,14
+896,909,N72 Inflammatory disease of cervix uteri,1675.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N72,14
+897,910,N73 Other female pelvic inflammatory diseases,4089.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N73,14
+898,911,N74 Female pelvic inflammatory disorders in diseases classified elsewhere,19.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N74,14
+899,912,N75 Diseases of bartholin's gland,1937.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N75,14
+900,913,N76 Other inflammation of vagina and vulva,4124.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N76,14
+901,914,N77 Vulvovaginal ulceration and inflammation in diseases classified elsewhere,344.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N77,14
+902,915,N80 Endometriosis,7914.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N80,14
+903,916,N81 Female genital prolapse,15581.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N81,14
+904,917,N82 Fistulae involving female genital tract,255.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N82,14
+905,918,"N83 Noninflammatory disorders of ovary, fallopian tube and broad ligament",10477.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N83,14
+906,919,N84 Polyp of female genital tract,14674.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N84,14
+907,920,"N85 Other noninflammatory disorders of uterus, except cervix",6791.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N85,14
+908,921,N86 Erosion and ectropion of cervix uteri,1652.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N86,14
+909,922,N87 Dysplasia of cervix uteri,6060.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N87,14
+910,923,N88 Other noninflammatory disorders of cervix uteri,2519.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N88,14
+911,924,N89 Other noninflammatory disorders of vagina,9965.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N89,14
+912,925,N90 Other noninflammatory disorders of vulva and perineum,5257.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N90,14
+913,926,"N91 Absent, scanty and rare menstruation",1967.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N91,14
+914,927,"N92 Excessive, frequent and irregular menstruation",23776.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N92,14
+915,928,N93 Other abnormal uterine and vaginal bleeding,8879.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N93,14
+916,929,N94 Pain and other conditions associated with female genital organs and menstrual cycle,9761.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N94,14
+917,930,N95 Menopausal and other perimenopausal disorders,30233.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N95,14
+918,931,N96 Habitual aborter,26.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N96,14
+919,932,N97 Female infertility,3280.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N97,14
+920,933,N98 Complications associated with artificial fertilisation,51.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N98,14
+921,934,"N99 Postprocedural disorders of genito-urinary system, not elsewhere classified",1471.0,XIV. Diseases of the genitourinary system,XIV. Genitourinary Diseases,#ffbb78,N99,14
+922,935,O00 Ectopic pregnancy,824.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O00,15
+923,936,O01 Hydatidiform mole,181.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O01,15
+924,937,O02 Other abnormal products of conception,1836.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O02,15
+925,938,O03 Spontaneous abortion,4640.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O03,15
+926,939,O04 Medical abortion,3219.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O04,15
+927,940,O05 Other abortion,6.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O05,15
+928,941,O06 Unspecified abortion,406.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O06,15
+929,942,O07 Failed attempted abortion,21.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O07,15
+930,943,O08 Complications following abortion and ectopic and molar pregnancy,70.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O08,15
+931,944,"O10 Pre-existing hypertension complicating pregnancy, childbirth and the puerperium",109.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O10,15
+932,945,O11 Pre-existing hypertensive disorder with superimposed proteinuria,22.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O11,15
+933,946,O12 Gestational [pregnancy-induced] oedema and proteinuria without hypertension,179.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O12,15
+934,947,O13 Gestational [pregnancy-induced] hypertension without significant proteinuria,677.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O13,15
+935,948,O14 Gestational [pregnancy-induced] hypertension with significant proteinuria,456.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O14,15
+936,949,O15 Eclampsia,74.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O15,15
+937,950,O16 Unspecified maternal hypertension,689.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O16,15
+938,951,O20 Haemorrhage in early pregnancy,1249.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O20,15
+939,952,O21 Excessive vomiting in pregnancy,332.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O21,15
+940,953,O22 Venous complications in pregnancy,121.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O22,15
+941,954,O23 Infections of genito-urinary tract in pregnancy,270.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O23,15
+942,955,O24 Diabetes mellitus in pregnancy,623.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O24,15
+943,956,O25 Malnutrition in pregnancy,1.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O25,15
+944,957,O26 Maternal care for other conditions predominantly related to pregnancy,2008.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O26,15
+945,958,O28 Abnormal findings on antenatal screening of mother,123.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O28,15
+946,959,O29 Complications of anaesthesia during pregnancy,2.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O29,15
+947,960,O30 Multiple gestation,514.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O30,15
+948,961,O31 Complications specific to multiple gestation,31.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O31,15
+949,962,O32 Maternal care for known or suspected malpresentation of foetus,1262.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O32,15
+950,963,O33 Maternal care for known or suspected disproportion,79.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O33,15
+951,964,O34 Maternal care for known or suspected abnormality of pelvic organs,1663.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O34,15
+952,965,O35 Maternal care for known or suspected foetal abnormality and damage,271.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O35,15
+953,966,O36 Maternal care for other known or suspected foetal problems,1993.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O36,15
+954,967,O40 Polyhydramnios,123.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O40,15
+955,968,O41 Other disorders of amniotic fluid and membranes,262.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O41,15
+956,969,O42 Premature rupture of membranes,1145.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O42,15
+957,970,O43 Placental disorders,247.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O43,15
+958,971,O44 Placenta praevia,207.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O44,15
+959,972,O45 Premature separation of placenta [abruptio placentae],49.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O45,15
+960,973,"O46 Antepartum haemorrhage, not elsewhere classified",679.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O46,15
+961,974,O47 False labour,1103.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O47,15
+962,975,O48 Prolonged pregnancy,1176.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O48,15
+963,976,O60 Preterm delivery,793.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O60,15
+964,977,O61 Failed induction of labour,157.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O61,15
+965,978,O62 Abnormalities of forces of labour,449.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O62,15
+966,979,O63 Long labour,1948.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O63,15
+967,980,O64 Obstructed labour due to malposition and malpresentation of foetus,428.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O64,15
+968,981,O65 Obstructed labour due to maternal pelvic abnormality,42.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O65,15
+969,982,O66 Other obstructed labour,342.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O66,15
+970,983,"O67 Labour and delivery complicated by intrapartum haemorrhage, not elsewhere classified",117.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O67,15
+971,984,O68 Labour and delivery complicated by foetal stress [distress],3448.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O68,15
+972,985,O69 Labour and delivery complicated by umbilical cord complications,625.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O69,15
+973,986,O70 Perineal laceration during delivery,5530.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O70,15
+974,987,O71 Other obstetric trauma,236.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O71,15
+975,988,O72 Postpartum haemorrhage,1691.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O72,15
+976,989,"O73 Retained placenta and membranes, without haemorrhage",240.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O73,15
+977,990,O74 Complications of anaesthesia during labour and delivery,27.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O74,15
+978,991,"O75 Other complications of labour and delivery, not elsewhere classified",816.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O75,15
+979,992,O80 Single spontaneous delivery,12271.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O80,15
+980,993,O81 Single delivery by forceps and vacuum extractor,1578.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O81,15
+981,994,O82 Single delivery by caesarean section,2292.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O82,15
+982,995,O83 Other assisted single delivery,20.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O83,15
+983,996,O84 Multiple delivery,29.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O84,15
+984,997,O85 Puerperal sepsis,66.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O85,15
+985,998,O86 Other puerperal infections,252.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O86,15
+986,999,O87 Venous complications in the puerperium,116.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O87,15
+987,1000,O88 Obstetric embolism,13.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O88,15
+988,1001,O89 Complications of anaesthesia during the puerperium,24.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O89,15
+989,1002,"O90 Complications of the puerperium, not elsewhere classified",257.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O90,15
+990,1003,O91 Infections of breast associated with childbirth,265.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O91,15
+991,1004,O92 Other disorders of breast and lactation associated with childbirth,174.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O92,15
+992,1005,"O94 Sequelae of complication of pregnancy, childbirth and the puerperium",6.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O94,15
+993,1006,O96 Death from any obstetric cause occurring more than 42 days but less than one year after delivery,1.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O96,15
+994,1007,"O98 Maternal infectious and parasitic diseases classifiable elsewhere but complicating pregnancy, childbirth and the puerperium",72.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O98,15
+995,1008,"O99 Other maternal diseases classifiable elsewhere but complicating pregnancy, childbirth and the puerperium",2091.0,"XV. Pregnancy, childbirth and the puerperium",XV. Pregnancy & Childbirth,#e377c2,O99,15
+996,1009,P00 Foetus and newborn affected by maternal conditions that may be unrelated to present pregnancy,6.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P00,16
+997,1010,"P02 Foetus and newborn affected by complications of placenta, cord and membranes",7.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P02,16
+998,1011,P03 Foetus and newborn affected by other complications of labour and delivery,132.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P03,16
+999,1012,P04 Foetus and newborn affected by noxious influences transmitted via placenta or breast milk,1.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P04,16
+1000,1013,P05 Slow foetal growth and foetal malnutrition,5.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P05,16
+1001,1014,"P07 Disorders related to short gestation and low birth weight, not elsewhere classified",25.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P07,16
+1002,1015,P08 Disorders related to long gestation and high birth weight,8.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P08,16
+1003,1016,P10 Intracranial laceration and haemorrhage due to birth injury,2.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P10,16
+1004,1017,P11 Other birth injuries to central nervous system,4.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P11,16
+1005,1018,P12 Birth injury to scalp,3.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P12,16
+1006,1019,P13 Birth injury to skeleton,4.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P13,16
+1007,1020,P14 Birth injury to peripheral nervous system,16.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P14,16
+1008,1021,P15 Other birth injuries,13.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P15,16
+1009,1022,P20 Intra-uterine hypoxia,7.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P20,16
+1010,1023,P21 Birth asphyxia,2.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P21,16
+1011,1024,P22 Respiratory distress of newborn,5.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P22,16
+1012,1025,P23 Congenital pneumonia,1.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P23,16
+1013,1026,P24 Neonatal aspiration syndromes,2.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P24,16
+1014,1027,P25 Interstitial emphysema and related conditions originating in the perinatal period,2.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P25,16
+1015,1028,P26 Pulmonary haemorrhage originating in the perinatal period,1.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P26,16
+1016,1029,P27 Chronic respiratory disease originating in the perinatal period,1.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P27,16
+1017,1030,P28 Other respiratory conditions originating in the perinatal period,16.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P28,16
+1018,1031,P29 Cardiovascular disorders originating in the perinatal period,10.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P29,16
+1019,1032,P35 Congenital viral diseases,15.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P35,16
+1020,1033,P36 Bacterial sepsis of newborn,27.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P36,16
+1021,1034,P37 Other congenital infectious and parasitic diseases,15.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P37,16
+1022,1035,P38 Omphalitis of newborn with or without mild haemorrhage,17.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P38,16
+1023,1036,P39 Other infections specific to the perinatal period,13.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P39,16
+1024,1037,P50 Foetal blood loss,1.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P50,16
+1025,1038,P51 Umbilical haemorrhage of newborn,6.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P51,16
+1026,1039,P52 Intracranial nontraumatic haemorrhage of foetus and newborn,1.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P52,16
+1027,1040,P53 Haemorrhagic disease of foetus and newborn,2.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P53,16
+1028,1041,P54 Other neonatal haemorrhages,8.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P54,16
+1029,1042,P55 Haemolytic disease of foetus and newborn,8.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P55,16
+1030,1043,P58 Neonatal jaundice due to other excessive haemolysis,3.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P58,16
+1031,1044,P59 Neonatal jaundice from other and unspecified causes,20.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P59,16
+1032,1045,P61 Other perinatal haematological disorders,4.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P61,16
+1033,1046,P70 Transitory disorders of carbohydrate metabolism specific to foetus and newborn,2.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P70,16
+1034,1047,P71 Transitory neonatal disorders of calcium and magnesium metabolism,1.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P71,16
+1035,1048,P78 Other perinatal digestive system disorders,1.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P78,16
+1036,1049,P83 Other conditions of integument specific to foetus and newborn,9.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P83,16
+1037,1050,P91 Other disturbances of cerebral status of newborn,,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P91,16
+1038,1051,P92 Feeding problems of newborn,11.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P92,16
+1039,1052,P94 Disorders of muscle tone of newborn,3.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P94,16
+1040,1053,P95 Foetal death of unspecified cause,113.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P95,16
+1041,1054,P96 Other conditions originating in the perinatal period,171.0,XVI. Certain conditions originating in the perinatal period,XVI. Perinatal Conditions,#f7b6d2,P96,16
+1042,1055,Q00 Anencephaly and similar malformations,4.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q00,17
+1043,1056,Q01 Encephalocele,11.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q01,17
+1044,1057,Q02 Microcephaly,2.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q02,17
+1045,1058,Q03 Congenital hydrocephalus,29.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q03,17
+1046,1059,Q04 Other congenital malformations of brain,71.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q04,17
+1047,1060,Q05 Spina bifida,311.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q05,17
+1048,1061,Q06 Other congenital malformations of spinal cord,34.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q06,17
+1049,1062,Q07 Other congenital malformations of nervous system,129.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q07,17
+1050,1063,"Q10 Congenital malformations of eyelid, lachrymal apparatus and orbit",122.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q10,17
+1051,1064,"Q11 Anophthalmos, microphthalmos and macrophthalmos",25.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q11,17
+1052,1065,Q12 Congenital lens malformations,245.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q12,17
+1053,1066,Q13 Congenital malformations of anterior segment of eye,49.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q13,17
+1054,1067,Q14 Congenital malformations of posterior segment of eye,237.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q14,17
+1055,1068,Q15 Other congenital malformations of eye,45.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q15,17
+1056,1069,Q16 Congenital malformations of ear causing impairment of hearing,56.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q16,17
+1057,1070,Q17 Other congenital malformations of ear,110.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q17,17
+1058,1071,Q18 Other congenital malformations of face and neck,208.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q18,17
+1059,1072,Q20 Congenital malformations of cardiac chambers and connexions,21.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q20,17
+1060,1073,Q21 Congenital malformations of cardiac septa,1013.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q21,17
+1061,1074,Q22 Congenital malformations of pulmonary and tricuspid valves,47.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q22,17
+1062,1075,Q23 Congenital malformations of aortic and mitral valves,530.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q23,17
+1063,1076,Q24 Other congenital malformations of heart,334.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q24,17
+1064,1077,Q25 Congenital malformations of great arteries,217.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q25,17
+1065,1078,Q26 Congenital malformations of great veins,36.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q26,17
+1066,1079,Q27 Other congenital malformations of peripheral vascular system,245.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q27,17
+1067,1080,Q28 Other congenital malformations of circulatory system,195.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q28,17
+1068,1081,Q30 Congenital malformations of nose,82.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q30,17
+1069,1082,Q31 Congenital malformations of larynx,52.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q31,17
+1070,1083,Q32 Congenital malformations of trachea and bronchus,13.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q32,17
+1071,1084,Q33 Congenital malformations of lung,57.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q33,17
+1072,1085,Q34 Other congenital malformations of respiratory system,11.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q34,17
+1073,1086,Q35 Cleft palate,33.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q35,17
+1074,1087,Q36 Cleft lip,9.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q36,17
+1075,1088,Q37 Cleft palate with cleft lip,31.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q37,17
+1076,1089,"Q38 Other congenital malformations of tongue, mouth and pharynx",464.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q38,17
+1077,1090,Q39 Congenital malformations of oesophagus,198.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q39,17
+1078,1091,Q40 Other congenital malformations of upper alimentary tract,214.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q40,17
+1079,1092,"Q41 Congenital absence, atresia and stenosis of small intestine",5.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q41,17
+1080,1093,"Q42 Congenital absence, atresia and stenosis of large intestine",20.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q42,17
+1081,1094,Q43 Other congenital malformations of intestine,402.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q43,17
+1082,1095,"Q44 Congenital malformations of gallbladder, bile ducts and liver",219.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q44,17
+1083,1096,Q45 Other congenital malformations of digestive system,50.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q45,17
+1084,1097,"Q50 Congenital malformations of ovaries, fallopian tubes and broad ligaments",251.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q50,17
+1085,1098,Q51 Congenital malformations of uterus and cervix,279.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q51,17
+1086,1099,Q52 Other congenital malformations of female genitalia,172.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q52,17
+1087,1100,Q53 Undescended testicle,475.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q53,17
+1088,1101,Q54 Hypospadias,206.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q54,17
+1089,1102,Q55 Other congenital malformations of male genital organs,134.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q55,17
+1090,1103,Q56 Indeterminate sex and pseudohermaphroditism,2.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q56,17
+1091,1104,Q60 Renal agenesis and other reduction defects of kidney,269.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q60,17
+1092,1105,Q61 Cystic kidney disease,800.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q61,17
+1093,1106,Q62 Congenital obstructive defects of renal pelvis and congenital malformations of ureter,133.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q62,17
+1094,1107,Q63 Other congenital malformations of kidney,509.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q63,17
+1095,1108,Q64 Other congenital malformations of urinary system,150.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q64,17
+1096,1109,Q65 Congenital deformities of hip,261.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q65,17
+1097,1110,Q66 Congenital deformities of feet,918.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q66,17
+1098,1111,"Q67 Congenital musculoskeletal deformities of head, face, spine and chest",228.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q67,17
+1099,1112,Q68 Other congenital musculoskeletal deformities,86.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q68,17
+1100,1113,Q69 Polydactyly,11.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q69,17
+1101,1114,Q70 Syndactyly,39.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q70,17
+1102,1115,Q71 Reduction defects of upper limb,25.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q71,17
+1103,1116,Q72 Reduction defects of lower limb,39.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q72,17
+1104,1117,Q73 Reduction defects of unspecified limb,9.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q73,17
+1105,1118,Q74 Other congenital malformations of limbs,210.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q74,17
+1106,1119,Q75 Other congenital malformations of skull and face bones,33.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q75,17
+1107,1120,Q76 Congenital malformations of spine and bony thorax,662.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q76,17
+1108,1121,Q77 Osteochondrodysplasia with defects of growth of tubular bones and spine,31.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q77,17
+1109,1122,Q78 Other osteochondrodysplasias,158.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q78,17
+1110,1123,"Q79 Congenital malformations of musculoskeletal system, not elsewhere classified",250.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q79,17
+1111,1124,Q80 Congenital ichthyosis,94.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q80,17
+1112,1125,Q81 Epidermolysis bullosa,25.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q81,17
+1113,1126,Q82 Other congenital malformations of skin,1305.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q82,17
+1114,1127,Q83 Congenital malformations of breast,129.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q83,17
+1115,1128,Q84 Other congenital malformations of integument,91.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q84,17
+1116,1129,"Q85 Phakomatoses, not elsewhere classified",274.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q85,17
+1117,1130,"Q86 Congenital malformation syndromes due to known exogenous causes, not elsewhere classified",2.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q86,17
+1118,1131,Q87 Other specified congenital malformation syndromes affecting multiple systems,242.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q87,17
+1119,1132,"Q89 Other congenital malformations, not elsewhere classified",310.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q89,17
+1120,1133,Q90 Down's syndrome,37.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q90,17
+1121,1134,Q91 Edwards' syndrome and patau's syndrome,11.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q91,17
+1122,1135,"Q92 Other trisomies and partial trisomies of the autosomes, not elsewhere classified",17.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q92,17
+1123,1136,"Q93 Monosomies and deletions from the autosomes, not elsewhere classified",13.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q93,17
+1124,1137,"Q95 Balanced rearrangements and structural markers, not elsewhere classified",4.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q95,17
+1125,1138,Q96 Turner's syndrome,43.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q96,17
+1126,1139,"Q97 Other sex chromosome abnormalities, female phenotype, not elsewhere classified",8.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q97,17
+1127,1140,"Q98 Other sex chromosome abnormalities, male phenotype, not elsewhere classified",59.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q98,17
+1128,1141,"Q99 Other chromosome abnormalities, not elsewhere classified",50.0,"XVII. Congenital malformations, deformations and chromosomal abnormalities",XVII. Congenital Abnormalities,#c5b0d5,Q99,17
+1129,1142,CXX Unknown Cancer,5026.0,II. Neoplasms,II. Neoplasms,#ff7f0e,CXX,2
+1130,1143,C00 Malignant neoplasm of lip,29.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C00,2
+1131,1144,C01 Malignant neoplasm of base of tongue,98.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C01,2
+1132,1145,C02 Malignant neoplasm of other and unspecified parts of tongue,146.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C02,2
+1133,1146,C03 Malignant neoplasm of gum,34.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C03,2
+1134,1147,C04 Malignant neoplasm of floor of mouth,38.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C04,2
+1135,1148,C05 Malignant neoplasm of palate,45.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C05,2
+1136,1149,C06 Malignant neoplasm of other and unspecified parts of mouth,53.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C06,2
+1137,1150,C07 Malignant neoplasm of parotid gland,75.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C07,2
+1138,1151,C08 Malignant neoplasm of other and unspecified major salivary glands,17.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C08,2
+1139,1152,C09 Malignant neoplasm of tonsil,185.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C09,2
+1140,1153,C10 Malignant neoplasm of oropharynx,25.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C10,2
+1141,1154,C11 Malignant neoplasm of nasopharynx,25.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C11,2
+1142,1155,C12 Malignant neoplasm of pyriform sinus,12.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C12,2
+1143,1156,C13 Malignant neoplasm of hypopharynx,10.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C13,2
+1144,1157,"C14 Malignant neoplasm of other and ill-defined sites in the lip, oral cavity and pharynx",12.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C14,2
+1145,1158,C15 Malignant neoplasm of oesophagus,526.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C15,2
+1146,1159,C16 Malignant neoplasm of stomach,375.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C16,2
+1147,1160,C17 Malignant neoplasm of small intestine,128.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C17,2
+1148,1161,C18 Malignant neoplasm of colon,2580.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C18,2
+1149,1162,C19 Malignant neoplasm of rectosigmoid junction,318.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C19,2
+1150,1163,C20 Malignant neoplasm of rectum,1205.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C20,2
+1151,1164,C21 Malignant neoplasm of anus and anal canal,126.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C21,2
+1152,1165,C22 Malignant neoplasm of liver and intrahepatic bile ducts,248.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C22,2
+1153,1166,C23 Malignant neoplasm of gallbladder,64.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C23,2
+1154,1167,C24 Malignant neoplasm of other and unspecified parts of biliary tract,89.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C24,2
+1155,1168,C25 Malignant neoplasm of pancreas,493.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C25,2
+1156,1169,C26 Malignant neoplasm of other and ill-defined digestive organs,15.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C26,2
+1157,1170,C30 Malignant neoplasm of nasal cavity and middle ear,26.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C30,2
+1158,1171,C31 Malignant neoplasm of accessory sinuses,13.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C31,2
+1159,1172,C32 Malignant neoplasm of larynx,206.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C32,2
+1160,1173,C33 Malignant neoplasm of trachea,5.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C33,2
+1161,1174,C34 Malignant neoplasm of bronchus and lung,1778.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C34,2
+1162,1175,C37 Malignant neoplasm of thymus,22.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C37,2
+1163,1176,"C38 Malignant neoplasm of heart, mediastinum and pleura",11.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C38,2
+1164,1177,C39 Malignant neoplasm of other and ill-defined sites in the respiratory system and intrathoracic organs,2.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C39,2
+1165,1178,C40 Malignant neoplasm of bone and articular cartilage of limbs,28.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C40,2
+1166,1179,C41 Malignant neoplasm of bone and articular cartilage of other and unspecified sites,25.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C41,2
+1167,1180,C42 Hematopoietic and reticuloendothelial systems icd-o-3 specific,36.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C42,2
+1168,1181,C43 Malignant melanoma of skin,2413.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C43,2
+1169,1182,C44 Other malignant neoplasms of skin,16632.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C44,2
+1170,1183,C45 Mesothelioma,211.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C45,2
+1171,1184,C46 Kaposi's sarcoma,10.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C46,2
+1172,1185,C47 Malignant neoplasm of peripheral nerves and autonomic nervous system,15.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C47,2
+1173,1186,C48 Malignant neoplasm of retroperitoneum and peritoneum,96.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C48,2
+1174,1187,C49 Malignant neoplasm of other connective and soft tissue,224.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C49,2
+1175,1188,C50 Malignant neoplasm of breast,10691.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C50,2
+1176,1189,C51 Malignant neoplasm of vulva,87.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C51,2
+1177,1190,C52 Malignant neoplasm of vagina,17.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C52,2
+1178,1191,C53 Malignant neoplasm of cervix uteri,374.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C53,2
+1179,1192,C54 Malignant neoplasm of corpus uteri,1301.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C54,2
+1180,1193,"C55 Malignant neoplasm of uterus, part unspecified",30.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C55,2
+1181,1194,C56 Malignant neoplasm of ovary,885.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C56,2
+1182,1195,C57 Malignant neoplasm of other and unspecified female genital organs,61.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C57,2
+1183,1196,C58 Malignant neoplasm of placenta,8.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C58,2
+1184,1197,C60 Malignant neoplasm of penis,52.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C60,2
+1185,1198,C61 Malignant neoplasm of prostate,6873.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C61,2
+1186,1199,C62 Malignant neoplasm of testis,429.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C62,2
+1187,1200,C63 Malignant neoplasm of other and unspecified male genital organs,10.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C63,2
+1188,1201,"C64 Malignant neoplasm of kidney, except renal pelvis",885.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C64,2
+1189,1202,C65 Malignant neoplasm of renal pelvis,53.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C65,2
+1190,1203,C66 Malignant neoplasm of ureter,32.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C66,2
+1191,1204,C67 Malignant neoplasm of bladder,814.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C67,2
+1192,1205,C68 Malignant neoplasm of other and unspecified urinary organs,10.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C68,2
+1193,1206,C69 Malignant neoplasm of eye and adnexa,109.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C69,2
+1194,1207,C70 Malignant neoplasm of meninges,7.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C70,2
+1195,1208,C71 Malignant neoplasm of brain,447.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C71,2
+1196,1209,"C72 Malignant neoplasm of spinal cord, cranial nerves and other parts of central nervous system",18.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C72,2
+1197,1210,C73 Malignant neoplasm of thyroid gland,421.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C73,2
+1198,1211,C74 Malignant neoplasm of adrenal gland,22.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C74,2
+1199,1212,C75 Malignant neoplasm of other endocrine glands and related structures,16.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C75,2
+1200,1213,C76 Malignant neoplasm of other and ill-defined sites,33.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C76,2
+1201,1214,C77 Secondary and unspecified malignant neoplasm of lymph nodes,90.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C77,2
+1202,1215,C78 Secondary malignant neoplasm of respiratory and digestive organs,102.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C78,2
+1203,1216,C79 Secondary malignant neoplasm of other sites,47.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C79,2
+1204,1217,C80 Malignant neoplasm without specification of site,143.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C80,2
+1205,1218,C81 Hodgkin's disease,255.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C81,2
+1206,1219,C82 Follicular [nodular] non-hodgkin's lymphoma,387.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C82,2
+1207,1220,C83 Diffuse non-hodgkin's lymphoma,697.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C83,2
+1208,1221,C84 Peripheral and cutaneous t-cell lymphomas,133.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C84,2
+1209,1222,C85 Other and unspecified types of non-hodgkin's lymphoma,355.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C85,2
+1210,1223,C86 Other specified types of t/nk-cell lymphoma,1.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C86,2
+1211,1224,C88 Malignant immunoproliferative diseases,24.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C88,2
+1212,1225,C90 Multiple myeloma and malignant plasma cell neoplasms,471.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C90,2
+1213,1226,C91 Lymphoid leukaemia,517.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C91,2
+1214,1227,C92 Myeloid leukaemia,323.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C92,2
+1215,1228,C93 Monocytic leukaemia,9.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C93,2
+1216,1229,C94 Other leukaemias of specified cell type,4.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C94,2
+1217,1230,C95 Leukaemia of unspecified cell type,12.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C95,2
+1218,1231,"C96 Other and unspecified malignant neoplasms of lymphoid, haematopoietic and related tissue",30.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C96,2
+1219,1232,C97 Malignant neoplasms of independent primary multiple sites,1.0,II. Neoplasms,II. Neoplasms,#ff7f0e,C97,2
+1220,1233,"D00 Carcinoma in situ of oral cavity, oesophagus and stomach",57.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D00,2
+1221,1234,D01 Carcinoma in situ of other and unspecified digestive organs,242.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D01,2
+1222,1235,D02 Carcinoma in situ of middle ear and respiratory system,48.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D02,2
+1223,1236,D03 Melanoma in situ,887.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D03,2
+1224,1237,D04 Carcinoma in situ of skin,843.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D04,2
+1225,1238,D05 Carcinoma in situ of breast,1788.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D05,2
+1226,1239,D06 Carcinoma in situ of cervix uteri,3053.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D06,2
+1227,1240,D07 Carcinoma in situ of other and unspecified genital organs,454.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D07,2
+1228,1241,D09 Carcinoma in situ of other and unspecified sites,544.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D09,2
+1229,1242,D10 Benign neoplasm of mouth and pharynx,,II. Neoplasms,II. Neoplasms,#ff7f0e,D10,2
+1230,1243,D11 Benign neoplasm of major salivary glands,31.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D11,2
+1231,1244,"D12 Benign neoplasm of colon, rectum, anus and anal canal",1.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D12,2
+1232,1245,D13 Benign neoplasm of other and ill-defined parts of digestive system,1.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D13,2
+1233,1246,D15 Benign neoplasm of other and unspecified intrathoracic organs,3.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D15,2
+1234,1247,D16 Benign neoplasm of bone and articular cartilage,2.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D16,2
+1235,1248,"D18 Haemangioma and lymphangioma, any site",2.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D18,2
+1236,1249,D27 Benign neoplasm of ovary,3.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D27,2
+1237,1250,D30 Benign neoplasm of urinary organs,1.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D30,2
+1238,1251,D32 Benign neoplasm of meninges,341.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D32,2
+1239,1252,D33 Benign neoplasm of brain and other parts of central nervous system,184.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D33,2
+1240,1253,D34 Benign neoplasm of thyroid gland,1.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D34,2
+1241,1254,D35 Benign neoplasm of other and unspecified endocrine glands,194.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D35,2
+1242,1255,D36 Benign neoplasm of other and unspecified sites,2.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D36,2
+1243,1256,D37 Neoplasm of uncertain or unknown behaviour of oral cavity and digestive organs,293.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D37,2
+1244,1257,D38 Neoplasm of uncertain or unknown behaviour of middle ear and respiratory and intrathoracic organs,21.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D38,2
+1245,1258,D39 Neoplasm of uncertain or unknown behaviour of female genital organs,126.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D39,2
+1246,1259,D40 Neoplasm of uncertain or unknown behaviour of male genital organs,25.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D40,2
+1247,1260,D41 Neoplasm of uncertain or unknown behaviour of urinary organs,623.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D41,2
+1248,1261,D42 Neoplasm of uncertain or unknown behaviour of meninges,26.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D42,2
+1249,1262,D43 Neoplasm of uncertain or unknown behaviour of brain and central nervous system,53.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D43,2
+1250,1263,D44 Neoplasm of uncertain or unknown behaviour of endocrine glands,49.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D44,2
+1251,1264,D45 Polycythaemia vera,125.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D45,2
+1252,1265,D46 Myelodysplastic syndromes,105.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D46,2
+1253,1266,"D47 Other neoplasms of uncertain or unknown behaviour of lymphoid, haematopoietic and related tissue",308.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D47,2
+1254,1267,D48 Neoplasm of uncertain or unknown behaviour of other and unspecified sites,183.0,II. Neoplasms,II. Neoplasms,#ff7f0e,D48,2

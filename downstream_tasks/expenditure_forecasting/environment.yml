@@ -1,0 +1,25 @@
+# Runtime for every stage (Python 3.11 + the pinned GPU stack).
+#
+#   conda env create -f environment.yml
+#   conda activate reclaim-expenditure
+#
+# The record runs used the versions pinned below (vllm 0.11.2 brings torch 2.9).
+name: reclaim-expenditure
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - vllm==0.11.2
+      - torch==2.9.0
+      - transformers==4.57.1
+      - accelerate==1.12.0
+      - datasets==4.5.0
+      - numpy==2.2.6
+      - pandas==2.3.3
+      - pyarrow==23.0.0
+      - scikit-learn==1.8.0
+      - lightgbm==4.6.0
+      - duckdb==1.3.2
+      - matplotlib==3.10.8

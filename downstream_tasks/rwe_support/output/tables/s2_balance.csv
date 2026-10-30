@@ -1,0 +1,29 @@
+Comparison,Data source,Specification,Reference covariates: weighted,Reference covariates: matched,Own covariates: weighted,Own covariates: matched
+GLP-1RA vs SGLT2i,MarketScan held-out claims,Unadjusted,41/64 (64.0%),-,-,-
+GLP-1RA vs SGLT2i,MarketScan held-out claims,Demographics,55/64 (85.9%),50/64 (78.1%),7/7 (100%),5/7 (71.4%)
+GLP-1RA vs SGLT2i,MarketScan held-out claims,Expert,64/64 (100%),64/64 (100%),64/64 (100%),64/64 (100%)
+GLP-1RA vs SGLT2i,MarketScan held-out claims,hdPS,63/64 (98.4%),63/64 (98.4%),507/507 (100%),507/507 (100%)
+GLP-1RA vs SGLT2i,MarketScan held-out claims,ReClaim-S,56/64 (87.5%),62/64 (96.8%),"1,024/1,026 (99.8%)","1,026/1,026 (100%)"
+GLP-1RA vs SGLT2i,MarketScan held-out claims,ReClaim-M,54/64 (84.3%),63/64 (98.4%),"2,048/2,050 (99.9%)","2,050/2,050 (100%)"
+GLP-1RA vs SGLT2i,MarketScan held-out claims,ReClaim-L,54/64 (84.3%),61/64 (95.3%),"2,048/2,050 (99.9%)","2,050/2,050 (100%)"
+GLP-1RA vs SGLT2i,YNHH EHR,Unadjusted,35/65 (53.8%),-,-,-
+GLP-1RA vs SGLT2i,YNHH EHR,Demographics,55/65 (84.6%),54/65 (83.0%),7/7 (100%),7/7 (100%)
+GLP-1RA vs SGLT2i,YNHH EHR,Expert,65/65 (100%),65/65 (100%),65/65 (100%),65/65 (100%)
+GLP-1RA vs SGLT2i,YNHH EHR,hdPS,63/65 (96.9%),64/65 (98.4%),454/507 (89.5%),507/507 (100%)
+GLP-1RA vs SGLT2i,YNHH EHR,ReClaim-S,56/65 (86.1%),61/65 (93.8%),"1,025/1,026 (99.9%)","1,026/1,026 (100%)"
+GLP-1RA vs SGLT2i,YNHH EHR,ReClaim-M,54/65 (83.0%),61/65 (93.8%),"2,048/2,050 (99.9%)","2,050/2,050 (100%)"
+GLP-1RA vs SGLT2i,YNHH EHR,ReClaim-L,53/65 (81.5%),60/65 (92.3%),"2,048/2,050 (99.9%)","2,050/2,050 (100%)"
+GLP-1RA vs DPP4i,MarketScan held-out claims,Unadjusted,42/64 (65.6%),-,-,-
+GLP-1RA vs DPP4i,MarketScan held-out claims,Demographics,53/64 (82.8%),46/64 (71.8%),7/7 (100%),4/7 (57.1%)
+GLP-1RA vs DPP4i,MarketScan held-out claims,Expert,64/64 (100%),62/64 (96.8%),64/64 (100%),62/64 (96.8%)
+GLP-1RA vs DPP4i,MarketScan held-out claims,hdPS,57/64 (89.0%),58/64 (90.6%),499/507 (98.4%),504/507 (99.4%)
+GLP-1RA vs DPP4i,MarketScan held-out claims,ReClaim-S,56/64 (87.5%),60/64 (93.7%),"1,014/1,026 (98.8%)","1,026/1,026 (100%)"
+GLP-1RA vs DPP4i,MarketScan held-out claims,ReClaim-M,56/64 (87.5%),58/64 (90.6%),"2,039/2,050 (99.4%)","2,044/2,050 (99.7%)"
+GLP-1RA vs DPP4i,MarketScan held-out claims,ReClaim-L,54/64 (84.3%),57/64 (89.0%),"2,047/2,050 (99.8%)","2,008/2,050 (97.9%)"
+GLP-1RA vs DPP4i,YNHH EHR,Unadjusted,39/65 (60.0%),-,-,-
+GLP-1RA vs DPP4i,YNHH EHR,Demographics,56/65 (86.1%),55/65 (84.6%),7/7 (100%),5/7 (71.4%)
+GLP-1RA vs DPP4i,YNHH EHR,Expert,65/65 (100%),65/65 (100%),65/65 (100%),65/65 (100%)
+GLP-1RA vs DPP4i,YNHH EHR,hdPS,64/65 (98.4%),64/65 (98.4%),506/507 (99.8%),507/507 (100%)
+GLP-1RA vs DPP4i,YNHH EHR,ReClaim-S,61/65 (93.8%),63/65 (96.9%),"1,025/1,026 (99.9%)","1,026/1,026 (100%)"
+GLP-1RA vs DPP4i,YNHH EHR,ReClaim-M,61/65 (93.8%),62/65 (95.3%),"2,049/2,050 (99.9%)","2,050/2,050 (100%)"
+GLP-1RA vs DPP4i,YNHH EHR,ReClaim-L,58/65 (89.2%),61/65 (93.8%),"2,049/2,050 (99.9%)","2,050/2,050 (100%)"

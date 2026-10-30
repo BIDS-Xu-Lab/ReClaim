@@ -1,0 +1,111 @@
+# =============================================================================
+# Cohort positive_control -- celecoxib vs non-selective NSAID -> severe GI complication
+# POSITIVE control (expected RR < 1, celecoxib protective). Schneeweiss 2009, Example Cohort 1.
+# All code CONTENT (drug generics, ICD-9/CPT codes) lives in codesets.py, keyed by cohort_id +
+# role; this config holds the study parameters and which named code set plays which role.
+# =============================================================================
+
+cohort_id: positive_control_celecoxib_gi
+label: "Celecoxib vs non-selective NSAID -> severe GI complication"
+control_type: positive          # expected adjusted RR < 1
+design: new_user_active_comparator
+
+# ---- Era / population -------------------------------------------------------
+era:
+  # Index window 2011-01-01..2014-12-31: four complete calendar years (matching the reference's
+  # 1999-2002 span) in the native ICD-9 era, with the 548-day washout fully observable in the
+  # raw files (which begin 2009-01-01). build_cohort.marketscan_era_years extends the raw-file
+  # year globs below index_start to cover the washout/baseline look-back.
+  index_start: "2011-01-01"
+  index_end:   "2014-12-31"
+age_floor: 65                   # >=65 at index, as in the reference
+
+# ---- Exposure / comparator (index = first qualifying dispensing) -----------
+exposure:
+  treatment:
+    name: celecoxib             # codesets.py: drugs['treatment']
+  comparator:
+    name: ns_nsaid              # codesets.py: drugs['comparator'] (14 ns-NSAIDs)
+  meloxicam_arm: comparator     # meloxicam pre-specified as NON-SELECTIVE
+  same_day_both_classes: drop   # mutually exclusive arms
+  # Fixed-dose COMBINATION products are excluded from the treatment/comparator arms. The relevant
+  # ns-NSAID combos in this era (diclofenac+misoprostol, naproxen+esomeprazole,
+  # ibuprofen+famotidine) carry a built-in gastroprotectant and select for GI risk, so counting
+  # them as plain NSAID initiations would distort a GI-bleed contrast. resolve_codes annotates each
+  # NDC with its ingredient count; build_cohort drops multi-ingredient NDCs from the exposure arms
+  # only; the washout gate stays inclusive so prior combo use still blocks new-user status.
+  single_ingredient_only: true
+
+# ---- Study clocks (three windows measured from index t0) -------------------
+windows:
+  washout_days: 548             # 18-month new-user washout: no NSAID or COX-2 (codesets drugs['washout'])
+  baseline_days: 180            # Schneeweiss base case
+  followup_days: 180            # 180d post-index
+  # Index-day rule (hdPS arm): diagnoses ON t0 included; drugs/procedures ON t0 excluded.
+  index_day_include_dx: true
+  index_day_include_proc: false
+  index_day_include_drug: false
+
+# ---- Drug-coverage gate ------------------------------------------------------
+# build_cohort keeps only people whose EVERY enrollment plan record has drug coverage
+# (DRUGCOVG/RX == 1); anyone with any non-drug-covered plan record is dropped.
+
+# ---- Observability gate ----------------------------------------------------
+# In addition to the drug-coverage gate. Modes (datasources/base.py enrollment_gate_mode):
+#   off      = no gate. The reference specifies the population (enrollees >=65), a 6-month
+#              baseline, and censoring at disenrollment, but NO continuous-enrollment rule; unlike
+#              censoring, a gate excludes people and can only cost sample size.
+#   baseline = ACTIVITY: claim footprint (i/o/d) brackets the look-back [index-180d, index].
+#   span     = COVERAGE: enrollment detail brackets the look-back.
+# Every mode tests the look-back only; follow-up disenrollment is censored via person_time.
+# ENROLLMENT_GATE=<mode> overrides at run time. Bare `off` parses as YAML false; keep it quoted.
+enrollment:
+  gate: "off"
+
+# ---- Exclusions ------------------------------------------------------------
+exclusions:
+  prior_outcome_baseline: false # as in the reference: Schneeweiss 2009 retains prior PUD/GI-bleed
+                                # patients (Table 1 covariates).
+
+# ---- Outcome: severe GI complication (native ICD-9) ------------------------
+# Definition from Schneeweiss et al., Epidemiology 2009;20:512-522, Example Cohort 1:
+# "hospitalization for GI hemorrhage or peptic ulcer disease complications including perforation
+# (ICD-9 discharge diagnoses 531*, 532*, 533*, 534*, 535*, or 578* in the first or second
+# position, or a physician service code for GI hemorrhage)"; validated PPV 90%. We do NOT narrow
+# to complication subcodes, which would depart from the validated definition.
+outcome:
+  name: severe_gi_complication
+  position_requirement: [1, 2]  # inpatient arm: dx in 1st or 2nd position, as in the reference
+  # Two-arm definition mirroring the paper: INPATIENT uses the broad list + 1st/2nd position;
+  # OUTPATIENT (the paper's "physician service code for GI hemorrhage" arm) uses the
+  # GI-HEMORRHAGE-only list, with no position requirement. Setting = MarketScan source table.
+  settings: [inpatient, outpatient]
+  primary: broad                # selects codesets.py outcome_sets['broad'] as the inpatient arm
+  itt: true                     # first-exposure-carried-forward
+
+# ---- Baseline clinical flags (l_*) -------------------------------------------
+# Content in codesets.py predefined['positive_control_celecoxib_gi']; used by the Table 1 summaries.
+
+# ---- hdPS engine params (base case) ----------------------------------------
+hdps:
+  n_per_dimension: 200
+  min_num_patients: 100         # paper: covariates with <100 patients dropped
+  k_prioritised: 500
+  recurrence_tiers: [once, sporadic, frequent]     # once / >=median / >=75th pct of nonzero occurrences
+  dx_granularity: icd9_3digit                      # truncate diagnoses to 3-digit category
+  interactions: false
+  domains: [inpatient_dx, inpatient_proc, outpatient_dx, outpatient_proc, drug]  # table lineage i/o/d
+  domain_fallback_3: [dx, proc, drug]              # if setting cannot be reliably attached
+
+# ---- Payer stratum ---------------------------------------------------------
+strata:
+  - id: MDCR       # Medicare supplemental (elderly), the closest match to the reference population
+    payer: MDCR
+    age_floor: 65
+    role: primary
+# ---- Embedding arm ---------------------------------------------------------
+embedding:
+  # Two date fields off the same index event:
+  #   index_date        -> day-precise, drives cohort/hdPS/outcome
+  #   entry_date_embed  -> trunc(index_date,'month'), drives ONLY the embedding feed (M0 blackout)
+  entry_date_embed: month_trunc

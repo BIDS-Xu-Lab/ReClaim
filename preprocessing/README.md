@@ -1,39 +1,43 @@
-# ReClaim Data Processing
+# ReClaim data preprocessing
 
-This folder contains scripts for generating vocabulary mappings and preprocessing MarketScan/EHR data into ReClaim-compatible token sequences.
+Code that turns MarketScan claims (and an external OMOP CDM source) into the token sequences ReClaim is trained
+and evaluated on.
 
-## Contents
+| Module | What it does | Data |
+|---|---|---|
+| `vocab_mapping/` | one-time code standardisation: ICD-9-CM to ICD-10-CM (CMS GEMs), CPT4/ICD9CM/ICD10PCS to SNOMED and NDC to RxNorm ingredient (OHDSI vocabulary) | CMS GEMs, OHDSI Athena vocabulary |
+| `pipeline_marketscan/` | MarketScan claims to token sequences and the train/val/test split, stages `s0`-`s5` on a Spark cluster | MarketScan CCAE, MDCR, MDCD |
+| `pipeline_omop/ehrshot/` | the same tokenisation for the EHRSHOT OMOP CDM export (stages `s0`-`s3`, `s5`; no split) | EHRSHOT (OMOP CDM) |
+| `pipeline_omop/ynhh/` | the same tokenisation for the YNHH OMOP CDM export, full cohort or a sampled subset (no split) | YNHH EHR (OMOP CDM) |
 
-| Path | Description |
-|------|-------------|
-| [`vocab_mapping/`](vocab_mapping/README.md) | Creates diagnosis, procedure, drug, and payer mapping files used by the preprocessing pipelines |
-| [`versions/v6_marketscan/`](versions/v6_marketscan/README.md) | Main v6 monthly MarketScan pipeline for CCAE, MDCR, and MDCD claims data |
-| [`versions/v6_ehrshot/`](versions/v6_ehrshot/README.md) | EHRSHOT external-validation pipeline from original OMOP CDM data |
-| [`versions/v6_ynhh/`](versions/v6_ynhh/README.md) | YNHH external-validation pipeline from original OMOP CDM data |
+Stages: `s0` enrollee filtering, `s1` token construction with the vocabulary mappings, `s2` monthly sequences with
+`<ATT-N>` time tokens and the training-cutoff split columns, `s3` vocabulary, `s4` train/val/test split (MarketScan only),
+`s5` sanity checks. Each module README documents the token format and every stage.
 
-## Notes
-
-- `v6` uses month-level timestamps and `<ATT-N>` tokens for elapsed months between event groups.
-- `v6_marketscan` is the reference pipeline for shared tokenization, sequence construction, vocabulary finalization, and sanity checks.
-- EHRSHOT and YNHH reuse the shared v6 logic and only document dataset-specific differences in their own READMEs.
-- Raw data, MarketScan dictionary files, generated mappings, processed outputs, and logs are local artifacts and are not included in this repository.
-
-## Typical Order
-
-1. Run vocabulary mapping first to generate the mapping files required by downstream preprocessing:
+## Setup
 
 ```bash
-cd preprocessing/vocab_mapping
-./create_mappings.sh
+conda env create -f environment.yml && conda activate reclaim-preprocessing
+cp env.sh.example env.sh                         # data roots, conda env, Spark module, output location
 ```
 
-2. Configure local root paths in the relevant pipeline shell script.
-
-3. Run the desired pipeline, for example:
+## Run
 
 ```bash
-cd preprocessing/versions/v6_marketscan
-sbatch spark_preproces_v6.sh
+(cd vocab_mapping && ./create_mappings.sh)       # once; writes vocab_mapping/mapping/
+(cd pipeline_marketscan && sbatch run_marketscan.sh)    # -> $MS_PROCESSED_ROOT/$DATA_VERSION/$MS_RUN_NAME
+(cd pipeline_omop/ehrshot && sbatch run_ehrshot.sh)     # -> $MS_PROCESSED_ROOT/$DATA_VERSION/$EHRSHOT_RUN_NAME
+(cd pipeline_omop/ynhh && sbatch run_ynhh_full.sh)      # -> $MS_PROCESSED_ROOT/$DATA_VERSION/$YNHH_FULL_RUN_NAME
 ```
 
-See each linked README for required inputs and pipeline-specific details.
+The drivers are written for a Slurm cluster with a Spark module that provides `spark-start` (Yale Center for Research
+Computing); `pipeline_marketscan/` needs a multi-node allocation for the full corpus, `pipeline_omop/ehrshot/` runs local-mode Spark
+on one node, and `pipeline_omop/ynhh/` either (`run_ynhh_full.sh` multi-node, `run_ynhh_subset.sh` one node).
+`pipeline_omop/payer_concept_annotated.csv` maps OMOP payer concepts to MarketScan payer and plan type for both OMOP sources.
+
+## Data
+
+No data, vocabularies, mappings or outputs are distributed. MarketScan data and its dictionary (`MSN_LOOKUP`) need a
+Merative license, OMOP sources their own data use agreement, and the OHDSI vocabulary is downloaded from Athena (CPT4
+needs a UMLS license); `vocab_mapping/README.md` lists the sources. The generated mappings (`vocab_mapping/mapping/`),
+run logs and `env.sh` are gitignored.

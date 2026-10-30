@@ -1,0 +1,45 @@
+payer_concept_id,concept_name,PAYER,PLANTYP,CAP,REASON
+0,No matching concept,MISSING,MISSING,MISSING,No matching concept - unable to classify
+280,Medicare,MDCR,2,0,Traditional Medicare - comprehensive FFS coverage
+281,Medicare Managed Care,MDCR,4,1,Medicare Managed Care (Medicare Advantage) - typically HMO-like and capitated
+283,Medicare Preferred Provider Organization (PPO),MDCR,6,0,Medicare PPO plan - fee-for-service
+289,Medicaid,MDCD,2,0,Traditional Medicaid - comprehensive FFS coverage
+290,Medicaid Managed Care,MDCD,4,1,Medicaid Managed Care - typically HMO and capitated
+295,"Other Government Federal/State/Local, excluding Department of Corrections",MISSING,MISSING,MISSING,Other government program - specific payer category unclear
+296,"DoD TRICARE, Civilian Health and Medical Program of the Uniformed Services (CHAMPUS)",CCAE,2,0,TRICARE - mapped to commercial comprehensive FFS
+325,Department of Corrections,MISSING,MISSING,MISSING,Correctional healthcare - not standard insurance category
+327,Private Health Insurance,CCAE,2,0,Private commercial insurance - comprehensive FFS
+328,Private Health Insurance - Managed Care,CCAE,MISSING,MISSING,Commercial Managed Care - specific plan type not specified
+330,Commercial Managed Care - Preferred Provider Organization (PPO),CCAE,6,0,Commercial PPO - fee-for-service
+331,Commercial Managed Care - Point of Service (POS),CCAE,5,0,Commercial POS - fee-for-service
+332,Blue Cross/Blue Shield,CCAE,2,0,Blue Cross/Blue Shield - comprehensive commercial coverage
+333,Blue Cross Managed Care - Health Management Organization (HMO),CCAE,4,1,Commercial HMO - typically capitated
+334,Blue Cross Managed Care - Preferred Provider Organization (PPO),CCAE,6,0,Commercial PPO - fee-for-service
+336,Blue Cross Managed Care - Dental,CCAE,MISSING,MISSING,Dental-only coverage - medical plan type N/A
+337,Blue Cross Insurance Indemnity,CCAE,1,0,Commercial Indemnity - basic/major medical FFS
+340,"Managed Care, Unspecified",CCAE,MISSING,MISSING,"Managed Care unspecified - assumed commercial, plan type unknown"
+341,Managed Care Health Management Organization (HMO),CCAE,4,1,"Managed Care HMO - assumed commercial, capitated"
+342,Managed Care Preferred Provider Organization (PPO),CCAE,6,0,"Managed Care PPO - assumed commercial, FFS"
+344,Miscellaneous Program,MISSING,MISSING,MISSING,Miscellaneous program - unable to classify
+345,Other Non-government,CCAE,MISSING,MISSING,Other non-government - likely commercial but plan type unknown
+348,Worker's Comp Fee-for-Service (FFS),CCAE,1,0,Worker's Comp FFS - mapped to commercial basic/major medical
+365,Medicare Other,MDCR,MISSING,MISSING,Medicare Other - specific plan type unknown
+374,Medicaid Dental,MDCD,MISSING,MISSING,"Medicaid Dental - dental-only, medical plan type N/A"
+376,DoD TRICARE For Life - Medicare Supplement,MDCR,2,0,TRICARE For Life supplements Medicare - classified as Medicare comprehensive
+382,DoD Dental - Stand Alone,MISSING,MISSING,MISSING,Military dental - not standard medical insurance
+383,Department of Veterans Affairs,CCAE,2,0,VA benefits - often mapped to commercial comprehensive
+392,VA Civilian Health and Medical Program for the VA (CHAMPVA),CCAE,2,0,CHAMPVA - often mapped to commercial comprehensive
+408,"Federal, State, Local not specified - Other",MISSING,MISSING,MISSING,Other government program - specific payer category unclear
+412,Exclusive Provider Organization,CCAE,3,0,"EPO - commercial, fee-for-service"
+415,Commercial Managed Care - Dental,CCAE,MISSING,MISSING,Commercial Dental - medical plan type N/A
+416,"Managed Care, Other (non HMO)",CCAE,6,0,"Managed Care non-HMO - likely PPO, assumed commercial FFS"
+418,Commercial Indemnity,CCAE,1,0,Commercial Indemnity - basic/major medical FFS
+420,Medicare supplemental policy (as second payer),MDCR,2,0,Medicare supplemental - secondary to Medicare FFS
+427,Dental Other Private Insurance,MISSING,MISSING,MISSING,Dental-only coverage - not standard medical insurance
+429,Blue Cross Managed Care,CCAE,MISSING,MISSING,Blue Cross Managed Care - specific plan type not specified
+430,Blue Cross Managed Care - Other,CCAE,MISSING,MISSING,Blue Cross Managed Care Other - specific plan type unknown
+433,Managed Care Point of Service (POS),CCAE,5,0,"Managed Care POS - assumed commercial, FFS"
+434,Other Managed Care,CCAE,MISSING,MISSING,"Other Managed Care - assumed commercial, plan type unknown"
+435,No Payment from an Organization/Agency/Program/Private Payer Listed,MISSING,MISSING,MISSING,No payment - unable to classify
+436,Self-pay,MISSING,MISSING,MISSING,Self-pay - no insurance payer
+447,Worker's Compensation,CCAE,1,0,Worker's Compensation - mapped to commercial basic/major medical FFS
